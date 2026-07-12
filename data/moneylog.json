@@ -39,6 +39,16 @@
       "category": "Transport",
       "method": "Cash",
       "note": "Petrol"
+    },
+    {
+      "id": "ba8f4be1-3935-4df6-9da8-9a8e136376ce",
+      "date": "2026-07-11",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 150,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "Cig"
     }
   ],
   "budgets": []
