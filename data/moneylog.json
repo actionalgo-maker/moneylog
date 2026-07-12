@@ -69,6 +69,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Hospital"
+    },
+    {
+      "id": "fb233802-5437-455e-8671-d61eb9247a0f",
+      "date": "2026-07-11",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 570,
+      "category": "Shopping",
+      "method": "Cash",
+      "note": "Sasta bazar"
     }
   ],
   "budgets": []
