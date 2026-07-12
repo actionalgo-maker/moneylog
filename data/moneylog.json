@@ -9,6 +9,16 @@
       "category": "Food",
       "method": "Cash",
       "note": "Tea"
+    },
+    {
+      "id": "28ee3eda-3e4c-4f06-b975-bec7806cc961",
+      "date": "2026-07-12",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 200,
+      "category": "Food",
+      "method": "Cash",
+      "note": "Icecream"
     }
   ],
   "budgets": []
