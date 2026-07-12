@@ -29,16 +29,6 @@
       "category": "Transport",
       "method": "Cash",
       "note": "Service"
-    },
-    {
-      "id": "56b5307d-ac6b-40c8-b56c-af3e4f36852e",
-      "date": "2026-07-12",
-      "user": "yonko",
-      "type": "expense",
-      "amount": 200,
-      "category": "Transport",
-      "method": "Cash",
-      "note": "Petrol"
     }
   ],
   "budgets": []
