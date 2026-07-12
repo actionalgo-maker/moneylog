@@ -119,6 +119,16 @@
       "category": "Food",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "c3f754d1-f609-4ace-aa9f-2c96fa86d1c1",
+      "date": "2026-07-12",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 60,
+      "category": "Food",
+      "method": "Cash",
+      "note": "Biwi"
     }
   ],
   "budgets": []
