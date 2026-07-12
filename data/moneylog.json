@@ -99,6 +99,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Temple"
+    },
+    {
+      "id": "e454b579-1924-4802-9d16-b8dd76543c94",
+      "date": "2026-07-11",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 250,
+      "category": "Transport",
+      "method": "Cash",
+      "note": "Byke cover"
     }
   ],
   "budgets": []
