@@ -19,6 +19,16 @@
       "category": "Food",
       "method": "Cash",
       "note": "Icecream"
+    },
+    {
+      "id": "1ffca833-6feb-4c65-ad39-abdd9f467344",
+      "date": "2026-07-11",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 380,
+      "category": "Transport",
+      "method": "Cash",
+      "note": "Service"
     }
   ],
   "budgets": []
