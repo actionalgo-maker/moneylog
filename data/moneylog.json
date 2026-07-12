@@ -1,4 +1,15 @@
 {
-  "entries": [],
+  "entries": [
+    {
+      "id": "d2298389-8737-4097-b5bd-f2a4cf81c166",
+      "date": "2026-07-12",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 10,
+      "category": "Food",
+      "method": "Cash",
+      "note": "Tea"
+    }
+  ],
   "budgets": []
 }
