@@ -89,6 +89,16 @@
       "category": "Fun",
       "method": "Cash",
       "note": "Cig"
+    },
+    {
+      "id": "2474f187-5018-4876-b31a-4f4dbb622529",
+      "date": "2026-07-11",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 40,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Temple"
     }
   ],
   "budgets": []
