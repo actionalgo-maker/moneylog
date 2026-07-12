@@ -59,6 +59,16 @@
       "category": "Food",
       "method": "Cash",
       "note": "Food"
+    },
+    {
+      "id": "ef21a283-4a77-4ec1-97b0-f494ec7c2e5b",
+      "date": "2026-07-11",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 500,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Hospital"
     }
   ],
   "budgets": []
