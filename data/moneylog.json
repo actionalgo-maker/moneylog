@@ -49,6 +49,16 @@
       "category": "Fun",
       "method": "Cash",
       "note": "Cig"
+    },
+    {
+      "id": "3741208a-2df3-4c53-9d76-8d4d8d5d3b1c",
+      "date": "2026-07-11",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 50,
+      "category": "Food",
+      "method": "Cash",
+      "note": "Food"
     }
   ],
   "budgets": []
