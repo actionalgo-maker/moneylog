@@ -109,6 +109,16 @@
       "category": "Transport",
       "method": "Cash",
       "note": "Byke cover"
+    },
+    {
+      "id": "53857121-c430-4fdf-a468-d04d96dec4df",
+      "date": "2026-07-11",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 35,
+      "category": "Food",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": []
