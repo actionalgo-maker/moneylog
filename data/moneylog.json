@@ -79,6 +79,16 @@
       "category": "Shopping",
       "method": "Cash",
       "note": "Sasta bazar"
+    },
+    {
+      "id": "82dc70b9-cb28-43bd-ac97-08b51cd62c71",
+      "date": "2026-07-11",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 40,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "Cig"
     }
   ],
   "budgets": []
