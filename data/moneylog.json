@@ -129,6 +129,16 @@
       "category": "Food",
       "method": "Cash",
       "note": "Biwi"
+    },
+    {
+      "id": "b202d183-b86f-4f66-b6e4-0e2f9cbc1276",
+      "date": "2026-07-12",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 160,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "Daru"
     }
   ],
   "budgets": []
