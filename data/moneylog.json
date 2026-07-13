@@ -139,6 +139,16 @@
       "category": "Fun",
       "method": "Cash",
       "note": "Daru"
+    },
+    {
+      "id": "7d29efc6-d6b2-4158-8958-7aecaa6b11fc",
+      "date": "2026-07-13",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 25,
+      "category": "Food",
+      "method": "Cash",
+      "note": "Mirinda"
     }
   ],
   "budgets": []
