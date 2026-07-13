@@ -159,6 +159,16 @@
       "category": "Fun",
       "method": "Cash",
       "note": "Ci"
+    },
+    {
+      "id": "23807edd-94ea-4073-98b1-dd18d253614a",
+      "date": "2026-07-13",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 120,
+      "category": "Food",
+      "method": "Cash",
+      "note": "Dahi and khowa"
     }
   ],
   "budgets": []
