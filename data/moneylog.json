@@ -199,6 +199,16 @@
       "category": "Fun",
       "method": "Cash",
       "note": "Cig + old balance"
+    },
+    {
+      "id": "d7b80dac-e991-4645-aa93-506a36baa734",
+      "date": "2026-07-14",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 30,
+      "category": "Food",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": []
