@@ -189,6 +189,16 @@
       "category": "Food",
       "method": "Cash",
       "note": "Sanosa"
+    },
+    {
+      "id": "2592efeb-e877-48c9-861f-0ee303d9fe90",
+      "date": "2026-07-14",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 200,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "Cig + old balance"
     }
   ],
   "budgets": []
