@@ -249,6 +249,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "All out"
+    },
+    {
+      "id": "9ab2a03f-aef5-43b2-9475-4c9ed3241b50",
+      "date": "2026-07-14",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 20,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Cig"
     }
   ],
   "budgets": []
