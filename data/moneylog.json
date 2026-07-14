@@ -219,6 +219,16 @@
       "category": "Fun",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "ecab83af-e02c-4999-9590-d682d5f3cb35",
+      "date": "2026-07-14",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 360,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Press"
     }
   ],
   "budgets": []
