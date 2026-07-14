@@ -179,6 +179,16 @@
       "category": "Fun",
       "method": "Cash",
       "note": "Cig"
+    },
+    {
+      "id": "913cb775-62a9-4760-9b94-994d34ae74ea",
+      "date": "2026-07-14",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 30,
+      "category": "Food",
+      "method": "Cash",
+      "note": "Sanosa"
     }
   ],
   "budgets": []
