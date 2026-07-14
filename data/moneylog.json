@@ -239,6 +239,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Frizi birthday"
+    },
+    {
+      "id": "6c749b9d-9d49-4693-a4ba-7b8a9be303c2",
+      "date": "2026-07-14",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 85,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "All out"
     }
   ],
   "budgets": []
