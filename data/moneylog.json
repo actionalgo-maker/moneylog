@@ -271,5 +271,11 @@
       "note": "Petrol"
     }
   ],
-  "budgets": []
+  "budgets": [],
+  "dailyLimits": [
+    {
+      "user": "yonko",
+      "amount": 300
+    }
+  ]
 }
