@@ -269,6 +269,16 @@
       "category": "Transport",
       "method": "Cash",
       "note": "Petrol"
+    },
+    {
+      "id": "a0c74510-d116-424a-b3c0-48b3d19a629c",
+      "date": "2026-07-15",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 40,
+      "category": "Food",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
