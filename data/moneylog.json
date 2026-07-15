@@ -299,6 +299,16 @@
       "category": "Fun",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "a293ba8a-464a-4ac7-aedf-a67b0e451c01",
+      "date": "2026-07-15",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 170,
+      "category": "Fun",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
