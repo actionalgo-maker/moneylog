@@ -129,11 +129,15 @@
   .report-row .rr-net{font-weight:800;font-size:13px;min-width:74px;text-align:right;}
 
   .cat-bar-row{margin-bottom:14px;}
-  .cat-bar-top{display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px;}
+  .cat-bar-top{display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px;cursor:pointer;}
   .cat-bar-top .name{font-weight:700;display:flex;align-items:center;gap:6px;}
-  .cat-bar-top .amt{font-weight:800;}
+  .cat-bar-top .amt{font-weight:800;display:flex;align-items:center;gap:6px;}
+  .cat-bar-top .expand-chevron{font-size:10px;color:var(--muted);display:inline-block;transition:transform .15s;}
+  .cat-bar-row.expanded .expand-chevron{transform:rotate(180deg);}
   .cat-bar-track{height:9px;border-radius:20px;background:var(--panel2);overflow:hidden;}
   .cat-bar-fill{height:100%;border-radius:20px;}
+  .cat-entries{margin-top:8px;padding-left:10px;border-left:2px solid var(--border);}
+  .cat-entries .entry-row:last-child{border-bottom:none;}
   .section-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:800;margin:18px 0 10px;}
   .section-label:first-child{margin-top:0;}
 
@@ -342,6 +346,15 @@
     <div class="card">
       <h1 class="screen-title">Budgets</h1>
       <p class="screen-sub">Monthly limits per category, this account only.</p>
+
+      <div class="section-label">Daily Spending Limit</div>
+      <div class="field">
+        <label>Daily limit (per day)</label>
+        <input type="number" min="0" step="0.01" id="dailyLimitInput" placeholder="e.g. 300">
+      </div>
+      <div id="dailyLimitSummary"></div>
+
+      <div class="section-label" style="margin-top:20px;">Category Budgets</div>
       <div id="budgetList"></div>
       <button id="saveBudgetsBtn" style="width:100%;margin-top:14px;">Save Budgets</button>
     </div>
@@ -448,10 +461,11 @@
     owner:"", repo:"", branch:"main", path:"data/moneylog.json", token:""
   };
 
-  // Data shape: { entries: [...], budgets: [...] }
+  // Data shape: { entries: [...], budgets: [...], dailyLimits: [...] }
   let data = loadCache();
   let entries = data.entries;
   let budgets = data.budgets;
+  let dailyLimits = data.dailyLimits || [];
   let fileSha = null;
   let currentUser = JSON.parse(localStorage.getItem(LS_USER) || "null");
   let adminFilter = "all"; // "all" or a username, admin-only
@@ -461,12 +475,12 @@
 
   function loadCache(){
     const raw = JSON.parse(localStorage.getItem(LS_CACHE) || "null");
-    if(!raw) return { entries: [], budgets: [] };
-    if(Array.isArray(raw)) return { entries: raw, budgets: [] }; // legacy shape
-    return { entries: raw.entries || [], budgets: raw.budgets || [] };
+    if(!raw) return { entries: [], budgets: [], dailyLimits: [] };
+    if(Array.isArray(raw)) return { entries: raw, budgets: [], dailyLimits: [] }; // legacy shape
+    return { entries: raw.entries || [], budgets: raw.budgets || [], dailyLimits: raw.dailyLimits || [] };
   }
   function persistCache(){
-    localStorage.setItem(LS_CACHE, JSON.stringify({ entries, budgets }));
+    localStorage.setItem(LS_CACHE, JSON.stringify({ entries, budgets, dailyLimits }));
   }
 
   const $ = (id) => document.getElementById(id);
@@ -645,10 +659,11 @@
         const content = b64DecodeUnicode(json.content.replace(/\n/g,""));
         const parsed = JSON.parse(content);
         if(Array.isArray(parsed)){
-          entries = parsed; budgets = [];
+          entries = parsed; budgets = []; dailyLimits = [];
         } else {
           entries = parsed.entries || [];
           budgets = parsed.budgets || [];
+          dailyLimits = parsed.dailyLimits || [];
         }
         setConn(true, "Connected — synced");
       } else {
@@ -671,7 +686,7 @@
     try{
       const body = {
         message: "Update MoneyLog " + new Date().toISOString(),
-        content: b64EncodeUnicode(JSON.stringify({ entries, budgets }, null, 2)),
+        content: b64EncodeUnicode(JSON.stringify({ entries, budgets, dailyLimits }, null, 2)),
         branch: config.branch || "main"
       };
       if(fileSha) body.sha = fileSha;
@@ -709,6 +724,7 @@
     renderFy();
     renderCategories();
     renderBudget();
+    renderDailyLimit();
   }
 
   function renderHome(){
@@ -809,21 +825,43 @@
     for(const e of list){
       if(e.type !== type) continue;
       const cat = e.category || "Uncategorized";
-      map.set(cat, (map.get(cat)||0) + num(e.amount));
+      if(!map.has(cat)) map.set(cat, { amount: 0, items: [] });
+      const g = map.get(cat);
+      g.amount += num(e.amount);
+      g.items.push(e);
       total += num(e.amount);
     }
-    const rows = [...map.entries()].sort((a,b)=> b[1]-a[1]);
+    const rows = [...map.entries()].sort((a,b)=> b[1].amount - a[1].amount);
     if(!rows.length) return `<div class="empty">No ${type} entries in this period.</div>`;
-    return rows.map(([cat, amt])=>{
+    return rows.map(([cat, g])=>{
+      const amt = g.amount;
       const pct = total > 0 ? (amt/total*100) : 0;
       const color = categoryColor(type, cat);
       const emoji = categoryEmoji(type, cat);
+      const sortedItems = [...g.items].sort((a,b)=> b.date.localeCompare(a.date) || (b.id||"").localeCompare(a.id||""));
+      const entriesHtml = sortedItems.map(e=>{
+        const who = (currentUser && currentUser.role === "admin") ? (findUser(e.user) ? findUser(e.user).label : e.user) : null;
+        return `<div class="entry-row">
+          <div class="entry-left">
+            <div class="entry-top">
+              <span class="method-chip">${dateHeaderLabel(e.date)}</span>
+              ${who ? `<span class="method-chip">${who}</span>` : ""}
+              ${e.method ? `<span class="method-chip">${e.method}</span>` : ""}
+            </div>
+            ${e.note ? `<div class="entry-note">${e.note.replace(/</g,"&lt;")}</div>` : ""}
+          </div>
+          <div class="entry-right">
+            <span class="entry-amount ${type==='income'?'pos':'neg'}">${type==='income'?'+':'-'}${fmt(e.amount)}</span>
+          </div>
+        </div>`;
+      }).join("");
       return `<div class="cat-bar-row">
         <div class="cat-bar-top">
           <span class="name">${emoji} ${cat}</span>
-          <span class="amt" style="color:${color}">${fmt(amt)} · ${pct.toFixed(0)}%</span>
+          <span class="amt" style="color:${color}">${fmt(amt)} · ${pct.toFixed(0)}% <span class="expand-chevron">▾</span></span>
         </div>
         <div class="cat-bar-track"><div class="cat-bar-fill" style="width:${pct}%;background:${color}"></div></div>
+        <div class="cat-entries" style="display:none;">${entriesHtml}</div>
       </div>`;
     }).join("");
   }
@@ -900,6 +938,49 @@
     }
   }
 
+  function renderDailyLimit(){
+    const uname = viewedUsername();
+    const input = $("dailyLimitInput");
+    const summary = $("dailyLimitSummary");
+    if(!uname){
+      input.value = "";
+      input.disabled = true;
+      summary.innerHTML = "";
+      return;
+    }
+    input.disabled = false;
+    const rec = dailyLimits.find(x=> x.user===uname);
+    const limit = rec ? num(rec.amount) : 0;
+    input.value = limit || "";
+
+    const now = new Date();
+    const todayStr = now.toISOString().slice(0,10);
+    const thisMonthKey = todayStr.slice(0,7);
+    const daysElapsed = now.getDate();
+    const spent = entries.filter(e=> e.user===uname && e.type==="expense" && monthKey(e.date)===thisMonthKey)
+      .reduce((s,e)=> s + num(e.amount), 0);
+
+    if(limit <= 0){
+      summary.innerHTML = `<div class="hint" style="margin-top:8px;">Set a daily limit above to track over/underspend for ${monthLabel(todayStr)}.</div>`;
+      return;
+    }
+
+    const expected = limit * daysElapsed;
+    const diff = expected - spent;
+    const overspent = diff < 0;
+    const label = overspent ? "Overspent by" : "Saved so far";
+    const color = overspent ? "var(--red)" : "var(--green)";
+    summary.innerHTML = `
+      <div class="report-row">
+        <div class="rr-label">Day ${daysElapsed} of ${monthLabel(todayStr)}</div>
+        <div class="rr-figs"><span>Budget so far: ${fmt(expected)}</span><span>Spent: ${fmt(spent)}</span></div>
+      </div>
+      <div style="text-align:center;margin-top:10px;">
+        <span style="font-size:20px;font-weight:800;color:${color};">${label} ${fmt(Math.abs(diff))}</span>
+      </div>
+    `;
+  }
+
   function renderBudget(){
     const container = $("budgetList");
     const uname = viewedUsername();
@@ -938,6 +1019,13 @@
   function saveBudgets(){
     const uname = viewedUsername();
     if(!uname) return;
+    const dailyVal = num($("dailyLimitInput").value);
+    const dIdx = dailyLimits.findIndex(x=> x.user===uname);
+    if(dailyVal > 0){
+      if(dIdx >= 0) dailyLimits[dIdx].amount = dailyVal; else dailyLimits.push({ user: uname, amount: dailyVal });
+    } else if(dIdx >= 0){
+      dailyLimits.splice(dIdx,1);
+    }
     document.querySelectorAll("#budgetList .budget-row").forEach(row=>{
       const cat = row.dataset.cat;
       const val = num(row.querySelector(".budget-input").value);
@@ -950,6 +1038,7 @@
     });
     persistCache();
     renderBudget();
+    renderDailyLimit();
     githubSave().then(ok=>{ if(ok) toast("Budgets saved & synced", "success"); });
   }
 
@@ -1131,6 +1220,23 @@
     $("fabAddBtn").onclick = ()=> goToScreen("add");
   }
 
+  // Tap a category row (Monthly / Fin. Year / Categories tabs) to expand and
+  // see every entry that makes up that total. Delegated on document so it
+  // keeps working across re-renders without rebinding listeners each time.
+  function initCategoryExpand(){
+    document.addEventListener("click", (e)=>{
+      const top = e.target.closest(".cat-bar-top");
+      if(!top) return;
+      const row = top.closest(".cat-bar-row");
+      if(!row) return;
+      const details = row.querySelector(".cat-entries");
+      if(!details) return;
+      const opening = details.style.display === "none";
+      details.style.display = opening ? "block" : "none";
+      row.classList.toggle("expanded", opening);
+    });
+  }
+
   function initSubtabs(){
     document.querySelectorAll(".subtab").forEach(tab=>{
       tab.onclick = ()=>{
@@ -1148,6 +1254,7 @@
     renderLogin();
     initNav();
     initSubtabs();
+    initCategoryExpand();
     clearForm();
     $("typeExpenseBtn").onclick = ()=> setFormType("expense");
     $("typeIncomeBtn").onclick = ()=> setFormType("income");
