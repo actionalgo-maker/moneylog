@@ -279,6 +279,16 @@
       "category": "Food",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "26ab6c6d-2190-47db-a1e9-44eb2963cbb1",
+      "date": "2026-07-15",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 120,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Hair cut"
     }
   ],
   "budgets": [],
