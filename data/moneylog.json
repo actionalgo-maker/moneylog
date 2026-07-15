@@ -289,6 +289,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Hair cut"
+    },
+    {
+      "id": "3f3a3898-4f4f-41dc-a2b8-25adb7470570",
+      "date": "2026-07-15",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 360,
+      "category": "Fun",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
