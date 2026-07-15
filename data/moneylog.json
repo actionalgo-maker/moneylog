@@ -259,6 +259,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Cig"
+    },
+    {
+      "id": "b604a081-4cd9-4e94-ae10-13d30361b4ef",
+      "date": "2026-07-15",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 200,
+      "category": "Transport",
+      "method": "Cash",
+      "note": "Petrol"
     }
   ],
   "budgets": []
