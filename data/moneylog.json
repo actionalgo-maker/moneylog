@@ -339,6 +339,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Soap powder"
+    },
+    {
+      "id": "5679fd11-0d1a-436d-aa10-ea32e98319bd",
+      "date": "2026-07-17",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 40,
+      "category": "Fun",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
