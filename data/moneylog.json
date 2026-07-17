@@ -319,6 +319,16 @@
       "category": "Food",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "22bd5216-35bd-41f8-b07c-d70d20177512",
+      "date": "2026-07-17",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 40,
+      "category": "Fun",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
