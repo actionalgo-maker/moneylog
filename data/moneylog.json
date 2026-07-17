@@ -329,6 +329,16 @@
       "category": "Food",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "0859b765-94dc-4cdb-8c3e-26edd8e7cb92",
+      "date": "2026-07-17",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 18,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Soap powder"
     }
   ],
   "budgets": [],
