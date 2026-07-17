@@ -359,6 +359,16 @@
       "category": "Transport",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "101c7240-c351-4f3c-a86f-f6aba743b428",
+      "date": "2026-07-17",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 70,
+      "category": "Food",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
