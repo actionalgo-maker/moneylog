@@ -349,6 +349,16 @@
       "category": "Fun",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "975121ca-ca3d-412c-ad1c-cee4ac7ec6c1",
+      "date": "2026-07-17",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 500,
+      "category": "Transport",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
