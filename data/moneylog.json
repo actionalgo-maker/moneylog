@@ -379,6 +379,16 @@
       "category": "Fun",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "0f2dadd8-4a7a-4208-9ac7-3a26ab7e9fd0",
+      "date": "2026-07-18",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 232,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "Nicotex"
     }
   ],
   "budgets": [],
