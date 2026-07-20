@@ -409,6 +409,16 @@
       "category": "Food",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "65b3373b-3528-44b0-aa50-ad50147c5d34",
+      "date": "2026-07-18",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 300,
+      "category": "Transport",
+      "method": "Cash",
+      "note": "Cab"
     }
   ],
   "budgets": [],
