@@ -449,6 +449,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Toy"
+    },
+    {
+      "id": "ff81444b-c834-4ba0-8cab-d627c1dc59eb",
+      "date": "2026-07-19",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 300,
+      "category": "Fun",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
