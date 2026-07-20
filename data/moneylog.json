@@ -419,6 +419,16 @@
       "category": "Transport",
       "method": "Cash",
       "note": "Cab"
+    },
+    {
+      "id": "064969c7-5ae9-46b0-9e0f-4840c1586981",
+      "date": "2026-07-18",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 1200,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "Daru"
     }
   ],
   "budgets": [],
