@@ -429,6 +429,16 @@
       "category": "Fun",
       "method": "Cash",
       "note": "Daru"
+    },
+    {
+      "id": "4ee96d46-9edc-44a6-a877-553a564a5c31",
+      "date": "2026-07-19",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 1200,
+      "category": "Shopping",
+      "method": "Cash",
+      "note": "S"
     }
   ],
   "budgets": [],
