@@ -439,6 +439,16 @@
       "category": "Shopping",
       "method": "Cash",
       "note": "S"
+    },
+    {
+      "id": "64fd45b0-58c9-4a49-97d4-241805189fec",
+      "date": "2026-07-19",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 200,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Toy"
     }
   ],
   "budgets": [],
