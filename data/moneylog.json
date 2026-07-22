@@ -489,6 +489,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Umbrella"
+    },
+    {
+      "id": "93745003-e9fa-4491-9000-d135f4aa4a78",
+      "date": "2026-07-21",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 300,
+      "category": "Transport",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
