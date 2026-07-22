@@ -459,16 +459,6 @@
       "category": "Fun",
       "method": "Cash",
       "note": ""
-    },
-    {
-      "id": "376d0535-9483-4770-8d56-5a7c20f85dc4",
-      "date": "2026-07-22",
-      "user": "yonko",
-      "type": "expense",
-      "amount": 1,
-      "category": "Food",
-      "method": "Cash",
-      "note": ""
     }
   ],
   "budgets": [],
