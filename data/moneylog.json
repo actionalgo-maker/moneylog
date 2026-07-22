@@ -459,6 +459,16 @@
       "category": "Fun",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "69d0a97e-16da-4535-9a60-25db1e880f09",
+      "date": "2026-07-21",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 490,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Raincoat"
     }
   ],
   "budgets": [],
