@@ -678,12 +678,30 @@
     }
   }
 
-  async function githubSave(){
+  // Fetches the current sha of the remote file without touching local state.
+  // Returns null if the file doesn't exist yet, or throws on real errors.
+  async function fetchLatestSha(){
+    const res = await fetch(ghUrl() + `?ref=${encodeURIComponent(config.branch||"main")}`, { headers: ghHeaders() });
+    if(res.status === 404) return null;
+    if(!res.ok){
+      const err = await res.text();
+      throw new Error(`GitHub error ${res.status}: ${err}`);
+    }
+    const json = await res.json();
+    return json.sha;
+  }
+
+  async function githubSave(retrying){
     if(!config.owner || !config.repo || !config.token){
       toast("Configure GitHub settings first (top right)", "error");
       return false;
     }
     try{
+      // Always resync the sha right before writing instead of trusting a
+      // cached value — the cached sha goes stale as soon as *any* other
+      // save happens (another device, another tab, a direct GitHub edit),
+      // which is what causes "409 does not match" conflicts.
+      fileSha = await fetchLatestSha();
       const body = {
         message: "Update MoneyLog " + new Date().toISOString(),
         content: b64EncodeUnicode(JSON.stringify({ entries, budgets, dailyLimits }, null, 2)),
@@ -697,6 +715,12 @@
       });
       if(!res.ok){
         const err = await res.text();
+        // 409 means the sha we just fetched went stale between the GET and
+        // the PUT (another writer squeezed in). Retry once with a fresh sha
+        // instead of surfacing a confusing error to the user.
+        if(res.status === 409 && !retrying){
+          return await githubSave(true);
+        }
         throw new Error(`GitHub error ${res.status}: ${err}`);
       }
       const json = await res.json();
