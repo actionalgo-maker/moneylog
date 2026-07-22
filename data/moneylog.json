@@ -479,6 +479,16 @@
       "category": "Fun",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "40e77b79-8a97-4bd6-9bab-7c381d426280",
+      "date": "2026-07-21",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 100,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Umbrella"
     }
   ],
   "budgets": [],
