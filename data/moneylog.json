@@ -529,6 +529,16 @@
       "category": "Food",
       "method": "Cash",
       "note": "diaper"
+    },
+    {
+      "id": "138955ab-b88a-4013-9aa6-f9ec64fe0fc0",
+      "date": "2026-07-24",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 1,
+      "category": "Food",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
