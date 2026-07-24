@@ -691,7 +691,8 @@
     return json.sha;
   }
 
-  async function githubSave(retrying){
+  async function githubSave(attempt){
+    attempt = attempt || 0;
     if(!config.owner || !config.repo || !config.token){
       toast("Configure GitHub settings first (top right)", "error");
       return false;
@@ -718,8 +719,11 @@
         // 409 means the sha we just fetched went stale between the GET and
         // the PUT (another writer squeezed in). Retry once with a fresh sha
         // instead of surfacing a confusing error to the user.
-        if(res.status === 409 && !retrying){
-          return await githubSave(true);
+        if(res.status === 409 && attempt < 4){
+          // Small random backoff so multiple simultaneous writers don't
+          // immediately collide again on their retries.
+          await new Promise(r => setTimeout(r, 250 + Math.random() * 400));
+          return await githubSave(attempt + 1);
         }
         throw new Error(`GitHub error ${res.status}: ${err}`);
       }
@@ -1313,7 +1317,22 @@
 
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("service-worker.js").catch(() => {});
+      navigator.serviceWorker.register("service-worker.js").then((reg) => {
+        // Proactively check for a newer service worker instead of waiting
+        // for the browser's own update cycle (which can take up to a day).
+        reg.update().catch(() => {});
+        setInterval(() => reg.update().catch(() => {}), 60 * 1000);
+      }).catch(() => {});
+
+      // As soon as a new service worker takes control, reload once so the
+      // page (and its cached assets) actually reflect the update — this
+      // replaces the old "close the app twice" workaround.
+      let reloaded = false;
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if(reloaded) return;
+        reloaded = true;
+        window.location.reload();
+      });
     });
   }
 })();
