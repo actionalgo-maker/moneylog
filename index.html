@@ -649,7 +649,7 @@
     }
     setConn(false, "Syncing...");
     try{
-      const res = await fetch(ghUrl() + `?ref=${encodeURIComponent(config.branch||"main")}`, { headers: ghHeaders() });
+      const res = await fetch(ghUrl() + `?ref=${encodeURIComponent(config.branch||"main")}&_=${Date.now()}`, { headers: ghHeaders(), cache: "no-store" });
       if(res.status === 404){
         fileSha = null;
         setConn(true, "Connected (no data yet)");
@@ -681,7 +681,7 @@
   // Fetches the current sha of the remote file without touching local state.
   // Returns null if the file doesn't exist yet, or throws on real errors.
   async function fetchLatestSha(){
-    const res = await fetch(ghUrl() + `?ref=${encodeURIComponent(config.branch||"main")}`, { headers: ghHeaders() });
+    const res = await fetch(ghUrl() + `?ref=${encodeURIComponent(config.branch||"main")}&_=${Date.now()}`, { headers: ghHeaders(), cache: "no-store" });
     if(res.status === 404) return null;
     if(!res.ok){
       const err = await res.text();

@@ -1,4 +1,4 @@
-const CACHE = "moneylog-cache-v5";
+const CACHE = "moneylog-cache-v6";
 const ASSETS = [
   "./",
   "./index.html",
