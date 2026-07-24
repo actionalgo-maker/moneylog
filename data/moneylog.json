@@ -509,6 +509,16 @@
       "category": "Fun",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "343bd404-94ea-4aaa-b97d-12a44cb0e1c5",
+      "date": "2026-07-23",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 608,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "diamper"
     }
   ],
   "budgets": [],
