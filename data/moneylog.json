@@ -519,6 +519,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "diamper"
+    },
+    {
+      "id": "292781cb-a419-4bc3-b687-1d4033cef132",
+      "date": "2026-07-24",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 1,
+      "category": "Food",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
