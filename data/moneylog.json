@@ -549,6 +549,16 @@
       "category": "Fun",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "09fa0807-a3c8-48b5-bebf-c7c5fbf7951f",
+      "date": "2026-07-25",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 3000,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Dmart"
     }
   ],
   "budgets": [],
