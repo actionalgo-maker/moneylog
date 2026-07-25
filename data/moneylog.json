@@ -599,6 +599,16 @@
       "category": "Salary",
       "method": "Cash",
       "note": "suraj"
+    },
+    {
+      "id": "e4a30d1c-0b8b-46e9-b206-ace9c0bde114",
+      "date": "2026-07-25",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 80,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Grocery"
     }
   ],
   "budgets": [],
