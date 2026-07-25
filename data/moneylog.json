@@ -589,6 +589,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Vaccine"
+    },
+    {
+      "id": "2ff122dd-6194-484c-b792-25fd90a0e3ae",
+      "date": "2026-07-25",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 5000,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Uma atya birthday"
     }
   ],
   "budgets": [],
