@@ -226,11 +226,10 @@
       <div class="hero-label" id="heroLabel">Today's Net</div>
       <div class="hero-value" id="heroValue">0.00</div>
       <div class="hero-sub">
-        <span class="pos">Income: <b id="heroIncome">0.00</b></span>
         <span class="neg">Expense: <b id="heroExpense">0.00</b></span>
       </div>
     </div>
-    <div class="alltime-line">All-time net: <b id="alltimeNet">0.00</b></div>
+    <div class="alltime-line">All-time expense: <b id="alltimeNet">0.00</b></div>
 
     <div class="card">
       <div class="toolbar" style="justify-content:space-between;">
@@ -426,6 +425,7 @@
       { name:"Transport", emoji:"🚗", color:"#5AC8FA" },
       { name:"Shopping", emoji:"🛍️", color:"#C77DFF" },
       { name:"Bills", emoji:"🧾", color:"#E8B54D" },
+      { name:"EMI", emoji:"🏦", color:"#7B61FF" },
       { name:"Fun", emoji:"🎬", color:"#FF6B81" },
       { name:"Other", emoji:"📦", color:"#8E94B8" }
     ],
@@ -756,24 +756,23 @@
   }
 
   function renderHome(){
-    const list = visibleEntries();
+    // Home is expense-only: income no longer factors into the daily/period
+    // net here. Income only shows up in Reports (Monthly / Fin. Year), where
+    // it's shown alongside that period's net P&L.
+    const list = visibleEntries().filter(e=>e.type==="expense");
     const { start, end } = periodRange(homePeriod);
     const periodList = list.filter(e => e.date >= start && e.date <= end);
 
-    const periodIncome = periodList.filter(e=>e.type==="income").reduce((s,e)=> s + num(e.amount), 0);
-    const periodExpense = periodList.filter(e=>e.type==="expense").reduce((s,e)=> s + num(e.amount), 0);
-    const periodNet = periodIncome - periodExpense;
+    const periodExpense = periodList.reduce((s,e)=> s + num(e.amount), 0);
 
-    $("heroLabel").textContent = PERIOD_LABELS[homePeriod] + "'s Net";
-    $("heroValue").textContent = (periodNet>=0?"+":"-") + fmt(Math.abs(periodNet));
-    $("heroValue").className = "hero-value " + (periodNet>=0?"pos":"neg");
-    $("heroIncome").textContent = fmt(periodIncome);
+    $("heroLabel").textContent = PERIOD_LABELS[homePeriod] + "'s Expense";
+    $("heroValue").textContent = periodExpense>0 ? "-"+fmt(periodExpense) : fmt(0);
+    $("heroValue").className = "hero-value " + (periodExpense>0 ? "neg" : "pos");
     $("heroExpense").textContent = fmt(periodExpense);
 
-    const allIncome = list.filter(e=>e.type==="income").reduce((s,e)=> s + num(e.amount), 0);
-    const allExpense = list.filter(e=>e.type==="expense").reduce((s,e)=> s + num(e.amount), 0);
-    $("alltimeNet").textContent = fmt(allIncome - allExpense);
-    $("alltimeNet").className = (allIncome-allExpense)>=0 ? "pos" : "neg";
+    const allExpense = list.reduce((s,e)=> s + num(e.amount), 0);
+    $("alltimeNet").textContent = fmt(allExpense);
+    $("alltimeNet").className = allExpense>0 ? "neg" : "pos";
 
     const sorted = [...periodList].sort((a,b)=> b.date.localeCompare(a.date) || (b.id||"").localeCompare(a.id||""));
     const container = $("dailyLog");
@@ -791,8 +790,8 @@
         cur.items.push(e);
       }
       for(const g of groups){
-        const dayNet = g.items.reduce((s,e)=> s + (e.type==="income"?num(e.amount):-num(e.amount)), 0);
-        const headerHtml = `<div class="day-header"><span>${dateHeaderLabel(g.date)}</span><span class="day-net ${dayNet>=0?'pos':'neg'}">${dayNet>=0?'+':'-'}${fmt(Math.abs(dayNet))}</span></div>`;
+        const dayExpense = g.items.reduce((s,e)=> s + num(e.amount), 0);
+        const headerHtml = `<div class="day-header"><span>${dateHeaderLabel(g.date)}</span><span class="day-net ${dayExpense>0?'neg':'pos'}">${dayExpense>0?'-':''}${fmt(dayExpense)}</span></div>`;
         const rowsHtml = g.items.map(e=>{
           const editable = canEdit(e);
           const who = findUser(e.user) ? findUser(e.user).label : e.user;
