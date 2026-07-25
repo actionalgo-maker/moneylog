@@ -589,6 +589,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Uma atya birthday"
+    },
+    {
+      "id": "a6d9b78f-44ba-4821-ad1a-1fd4624a0fd7",
+      "date": "2026-07-25",
+      "user": "yonko",
+      "type": "income",
+      "amount": 6000,
+      "category": "Salary",
+      "method": "Cash",
+      "note": "suraj"
     }
   ],
   "budgets": [],
