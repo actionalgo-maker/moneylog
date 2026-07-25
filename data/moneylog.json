@@ -535,8 +535,8 @@
       "date": "2026-07-24",
       "user": "yonko",
       "type": "expense",
-      "amount": 1,
-      "category": "Food",
+      "amount": 200,
+      "category": "Fun",
       "method": "Cash",
       "note": ""
     },
