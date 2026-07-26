@@ -609,6 +609,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Grocery"
+    },
+    {
+      "id": "2cef60b5-3c07-421e-bd95-44019a7a89c3",
+      "date": "2026-07-26",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 50,
+      "category": "Food",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
