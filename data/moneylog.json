@@ -729,6 +729,16 @@
       "category": "EMI",
       "method": "Cash",
       "note": "Credit card"
+    },
+    {
+      "id": "0460661f-5af3-4c9a-90f8-d624d997b658",
+      "date": "2026-07-26",
+      "user": "yonko",
+      "type": "income",
+      "amount": 7000,
+      "category": "Business",
+      "method": "Cash",
+      "note": "Suraj"
     }
   ],
   "budgets": [],
