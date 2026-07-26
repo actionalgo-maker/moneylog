@@ -699,6 +699,16 @@
       "category": "Business",
       "method": "Cash",
       "note": "Suraj"
+    },
+    {
+      "id": "11046a4b-4852-4292-abf8-9b45af3df6ad",
+      "date": "2026-07-26",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 8000,
+      "category": "EMI",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
