@@ -719,6 +719,16 @@
       "category": "EMI",
       "method": "Cash",
       "note": "Byke loan"
+    },
+    {
+      "id": "e4d4645e-7e8c-488b-b27d-7df0064ecabf",
+      "date": "2026-07-26",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 4800,
+      "category": "EMI",
+      "method": "Cash",
+      "note": "Credit card"
     }
   ],
   "budgets": [],
