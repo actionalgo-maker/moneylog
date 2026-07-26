@@ -649,6 +649,16 @@
       "category": "EMI",
       "method": "Cash",
       "note": "Credicard"
+    },
+    {
+      "id": "763908bf-9e05-45a9-89b0-b338fe361c78",
+      "date": "2026-07-26",
+      "user": "yonko",
+      "type": "income",
+      "amount": 41100,
+      "category": "Salary",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
