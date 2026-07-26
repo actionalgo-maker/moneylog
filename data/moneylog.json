@@ -659,6 +659,16 @@
       "category": "Salary",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "42439769-f6a8-4b3d-8d6f-417395abbf1e",
+      "date": "2026-07-26",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 15000,
+      "category": "EMI",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
