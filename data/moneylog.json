@@ -749,6 +749,16 @@
       "category": "Business",
       "method": "Cash",
       "note": "Nrm"
+    },
+    {
+      "id": "a88c94c4-d438-4ecd-8886-70a9b397e956",
+      "date": "2026-07-26",
+      "user": "yonko",
+      "type": "income",
+      "amount": 10000,
+      "category": "Investment",
+      "method": "Cash",
+      "note": "Shoonya"
     }
   ],
   "budgets": [],
