@@ -739,6 +739,16 @@
       "category": "Business",
       "method": "Cash",
       "note": "Suraj"
+    },
+    {
+      "id": "ee443d55-26ee-470a-928d-2a06b05249bf",
+      "date": "2026-07-26",
+      "user": "yonko",
+      "type": "income",
+      "amount": 6000,
+      "category": "Business",
+      "method": "Cash",
+      "note": "Nrm"
     }
   ],
   "budgets": [],
