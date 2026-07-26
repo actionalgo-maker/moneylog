@@ -669,6 +669,16 @@
       "category": "EMI",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "a116d262-346a-43c0-9c03-e80923abde19",
+      "date": "2026-07-26",
+      "user": "yonko",
+      "type": "income",
+      "amount": 8000,
+      "category": "Salary",
+      "method": "Cash",
+      "note": "Suraj"
     }
   ],
   "budgets": [],
