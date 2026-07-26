@@ -679,6 +679,16 @@
       "category": "Salary",
       "method": "Cash",
       "note": "Suraj"
+    },
+    {
+      "id": "04ba08f7-7aa0-4339-a685-1b51046c2451",
+      "date": "2026-07-26",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 8000,
+      "category": "EMI",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
