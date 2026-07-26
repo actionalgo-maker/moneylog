@@ -639,6 +639,16 @@
       "category": "Transport",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "0c3128ba-5147-4b1c-b872-5a1ae46b5372",
+      "date": "2026-07-26",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 589,
+      "category": "EMI",
+      "method": "Cash",
+      "note": "Credicard"
     }
   ],
   "budgets": [],
