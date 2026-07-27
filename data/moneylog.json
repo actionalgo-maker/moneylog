@@ -759,6 +759,16 @@
       "category": "Investment",
       "method": "Cash",
       "note": "Shoonya"
+    },
+    {
+      "id": "cb373c73-d70d-43dd-88bf-c4d8843f662d",
+      "date": "2026-07-26",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 850,
+      "category": "Food",
+      "method": "Cash",
+      "note": "Wifey dinner"
     }
   ],
   "budgets": [],
