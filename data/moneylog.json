@@ -789,6 +789,16 @@
       "category": "Food",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "be8a3950-0e86-4179-806f-5380f0cb1e65",
+      "date": "2026-07-27",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 25,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Groc"
     }
   ],
   "budgets": [],
