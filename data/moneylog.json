@@ -769,6 +769,16 @@
       "category": "Food",
       "method": "Cash",
       "note": "Wifey dinner"
+    },
+    {
+      "id": "12b7bbc0-cd14-4d70-8089-934222e34f62",
+      "date": "2026-07-26",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 180,
+      "category": "Fun",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
