@@ -809,6 +809,16 @@
       "category": "Shopping",
       "method": "Cash",
       "note": "Wife braclet"
+    },
+    {
+      "id": "a131748e-3b48-4951-b3e3-a229bf50b3ef",
+      "date": "2026-07-28",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 40,
+      "category": "Food",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
