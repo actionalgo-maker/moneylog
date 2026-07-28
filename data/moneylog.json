@@ -799,6 +799,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Groc"
+    },
+    {
+      "id": "c575f8f3-b4d1-45c0-8fb8-0beda6627cd1",
+      "date": "2026-07-28",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 153,
+      "category": "Shopping",
+      "method": "Cash",
+      "note": "Wife braclet"
     }
   ],
   "budgets": [],
