@@ -869,6 +869,16 @@
       "category": "Food",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "b26b5093-ad04-44df-a840-65bf2f243bc7",
+      "date": "2026-07-29",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 90,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Peda for pooja"
     }
   ],
   "budgets": [],
