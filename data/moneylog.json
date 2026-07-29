@@ -887,5 +887,16 @@
       "user": "yonko",
       "amount": 300
     }
+  ],
+  "planned": [
+    {
+      "id": "e245f2be-9698-4939-9eb3-19bc2a812d7a",
+      "user": "yonko",
+      "title": "frizy anaprashan",
+      "amount": 2000,
+      "dueDate": "2026-07-31",
+      "note": "",
+      "done": false
+    }
   ]
 }
