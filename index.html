@@ -113,7 +113,7 @@
   .entry-right{display:flex;align-items:center;gap:10px;flex-shrink:0;}
   .entry-amount{font-weight:800;font-size:14px;}
   .row-actions{display:flex;gap:6px;}
-  .row-actions button{padding:4px 8px;font-size:11px;border-radius:8px;}
+  .row-actions button{padding:4px 8px;font-size:11px;border-radius:10px;}
 
   /* Report rows (replaces plain tables) */
   .subtabs{display:flex;gap:6px;margin-bottom:16px;background:var(--panel2);border:1px solid var(--border);border-radius:14px;padding:4px;}
@@ -153,7 +153,19 @@
   .budget-row:last-child{border-bottom:none;}
   .budget-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;font-size:13px;gap:8px;}
   .budget-edit{display:flex;gap:8px;align-items:center;margin-top:10px;}
-  .budget-edit input{width:140px;padding:8px 10px;border-radius:10px;border:1px solid var(--border);background:var(--panel2);color:var(--text);font-size:13px;}
+  .budget-edit input{width:140px;padding:8px 10px;border-radius:12px;border:1px solid var(--border);background:var(--panel2);color:var(--text);font-size:13px;}
+
+  .planned-item{display:flex;align-items:flex-start;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);}
+  .planned-item:last-child{border-bottom:none;}
+  .planned-check{width:24px;height:24px;border-radius:50%;border:2px solid var(--border);flex-shrink:0;display:flex;align-items:center;justify-content:center;cursor:pointer;color:transparent;font-size:13px;margin-top:2px;}
+  .planned-check.done{background:var(--green);border-color:var(--green);color:#fff;}
+  .planned-body{flex:1;min-width:0;}
+  .planned-title{font-weight:700;font-size:14px;}
+  .planned-item.done .planned-title{text-decoration:line-through;color:var(--muted);}
+  .planned-meta{font-size:11px;color:var(--muted);margin-top:2px;}
+  .planned-meta.overdue{color:var(--red);font-weight:700;}
+  .planned-amount{font-weight:800;font-size:14px;white-space:nowrap;}
+  .planned-actions{display:flex;gap:6px;margin-top:6px;}
 
   /* Login screen */
   #loginScreen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;}
@@ -226,10 +238,11 @@
       <div class="hero-label" id="heroLabel">Today's Net</div>
       <div class="hero-value" id="heroValue">0.00</div>
       <div class="hero-sub">
+        <span class="pos">Income: <b id="heroIncome">0.00</b></span>
         <span class="neg">Expense: <b id="heroExpense">0.00</b></span>
       </div>
     </div>
-    <div class="alltime-line">All-time expense: <b id="alltimeNet">0.00</b></div>
+    <div class="alltime-line">All-time net: <b id="alltimeNet">0.00</b></div>
 
     <div class="card">
       <div class="toolbar" style="justify-content:space-between;">
@@ -359,6 +372,39 @@
     </div>
   </div>
 
+  <!-- ===== PLANNED EXPENSES ===== -->
+  <div class="screen" id="screen-planned">
+    <div class="card">
+      <h1 class="screen-title">Planned Expenses</h1>
+      <p class="screen-sub">Big expenses coming up. Add a reminder, mark it done once you've paid.</p>
+
+      <div class="field">
+        <label>Title</label>
+        <input type="text" id="p_title" placeholder="e.g. Laptop replacement">
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label>Amount</label>
+          <input type="number" min="0" step="0.01" id="p_amount" placeholder="0">
+        </div>
+        <div class="field">
+          <label>Due date</label>
+          <input type="date" id="p_date">
+        </div>
+      </div>
+      <div class="field">
+        <label>Note</label>
+        <input type="text" id="p_note" placeholder="e.g. Current one is 5 years old">
+      </div>
+      <button id="addPlannedBtn" style="width:100%;">Add reminder</button>
+    </div>
+
+    <div class="card">
+      <span style="font-weight:800;font-size:15px;">Upcoming & done</span>
+      <div id="plannedList" style="margin-top:10px;"></div>
+    </div>
+  </div>
+
 </main>
 
 <button class="fab" id="fabAddBtn" title="Add entry">＋</button>
@@ -368,6 +414,7 @@
   <div class="nav-item" data-screen="reports"><span class="nav-emoji">📊</span>Reports</div>
   <div class="nav-item" data-screen="add"><span class="nav-emoji">➕</span>Add</div>
   <div class="nav-item" data-screen="budgets"><span class="nav-emoji">🎯</span>Budgets</div>
+  <div class="nav-item" data-screen="planned"><span class="nav-emoji">🔔</span>Planned</div>
 </nav>
 
 <div class="modal-backdrop" id="settingsModal">
@@ -425,7 +472,6 @@
       { name:"Transport", emoji:"🚗", color:"#5AC8FA" },
       { name:"Shopping", emoji:"🛍️", color:"#C77DFF" },
       { name:"Bills", emoji:"🧾", color:"#E8B54D" },
-      { name:"EMI", emoji:"🏦", color:"#7B61FF" },
       { name:"Fun", emoji:"🎬", color:"#FF6B81" },
       { name:"Other", emoji:"📦", color:"#8E94B8" }
     ],
@@ -461,11 +507,12 @@
     owner:"", repo:"", branch:"main", path:"data/moneylog.json", token:""
   };
 
-  // Data shape: { entries: [...], budgets: [...], dailyLimits: [...] }
+  // Data shape: { entries: [...], budgets: [...], dailyLimits: [...], planned: [...] }
   let data = loadCache();
   let entries = data.entries;
   let budgets = data.budgets;
   let dailyLimits = data.dailyLimits || [];
+  let planned = data.planned || [];
   let fileSha = null;
   let currentUser = JSON.parse(localStorage.getItem(LS_USER) || "null");
   let adminFilter = "all"; // "all" or a username, admin-only
@@ -475,12 +522,12 @@
 
   function loadCache(){
     const raw = JSON.parse(localStorage.getItem(LS_CACHE) || "null");
-    if(!raw) return { entries: [], budgets: [], dailyLimits: [] };
-    if(Array.isArray(raw)) return { entries: raw, budgets: [], dailyLimits: [] }; // legacy shape
-    return { entries: raw.entries || [], budgets: raw.budgets || [], dailyLimits: raw.dailyLimits || [] };
+    if(!raw) return { entries: [], budgets: [], dailyLimits: [], planned: [] };
+    if(Array.isArray(raw)) return { entries: raw, budgets: [], dailyLimits: [], planned: [] }; // legacy shape
+    return { entries: raw.entries || [], budgets: raw.budgets || [], dailyLimits: raw.dailyLimits || [], planned: raw.planned || [] };
   }
   function persistCache(){
-    localStorage.setItem(LS_CACHE, JSON.stringify({ entries, budgets, dailyLimits }));
+    localStorage.setItem(LS_CACHE, JSON.stringify({ entries, budgets, dailyLimits, planned }));
   }
 
   const $ = (id) => document.getElementById(id);
@@ -649,7 +696,7 @@
     }
     setConn(false, "Syncing...");
     try{
-      const res = await fetch(ghUrl() + `?ref=${encodeURIComponent(config.branch||"main")}&_=${Date.now()}`, { headers: ghHeaders(), cache: "no-store" });
+      const res = await fetch(ghUrl() + `?ref=${encodeURIComponent(config.branch||"main")}`, { headers: ghHeaders() });
       if(res.status === 404){
         fileSha = null;
         setConn(true, "Connected (no data yet)");
@@ -659,11 +706,12 @@
         const content = b64DecodeUnicode(json.content.replace(/\n/g,""));
         const parsed = JSON.parse(content);
         if(Array.isArray(parsed)){
-          entries = parsed; budgets = []; dailyLimits = [];
+          entries = parsed; budgets = []; dailyLimits = []; planned = [];
         } else {
           entries = parsed.entries || [];
           budgets = parsed.budgets || [];
           dailyLimits = parsed.dailyLimits || [];
+          planned = parsed.planned || [];
         }
         setConn(true, "Connected — synced");
       } else {
@@ -678,34 +726,15 @@
     }
   }
 
-  // Fetches the current sha of the remote file without touching local state.
-  // Returns null if the file doesn't exist yet, or throws on real errors.
-  async function fetchLatestSha(){
-    const res = await fetch(ghUrl() + `?ref=${encodeURIComponent(config.branch||"main")}&_=${Date.now()}`, { headers: ghHeaders(), cache: "no-store" });
-    if(res.status === 404) return null;
-    if(!res.ok){
-      const err = await res.text();
-      throw new Error(`GitHub error ${res.status}: ${err}`);
-    }
-    const json = await res.json();
-    return json.sha;
-  }
-
-  async function githubSave(attempt){
-    attempt = attempt || 0;
+  async function githubSave(){
     if(!config.owner || !config.repo || !config.token){
       toast("Configure GitHub settings first (top right)", "error");
       return false;
     }
     try{
-      // Always resync the sha right before writing instead of trusting a
-      // cached value — the cached sha goes stale as soon as *any* other
-      // save happens (another device, another tab, a direct GitHub edit),
-      // which is what causes "409 does not match" conflicts.
-      fileSha = await fetchLatestSha();
       const body = {
         message: "Update MoneyLog " + new Date().toISOString(),
-        content: b64EncodeUnicode(JSON.stringify({ entries, budgets, dailyLimits }, null, 2)),
+        content: b64EncodeUnicode(JSON.stringify({ entries, budgets, dailyLimits, planned }, null, 2)),
         branch: config.branch || "main"
       };
       if(fileSha) body.sha = fileSha;
@@ -716,15 +745,6 @@
       });
       if(!res.ok){
         const err = await res.text();
-        // 409 means the sha we just fetched went stale between the GET and
-        // the PUT (another writer squeezed in). Retry once with a fresh sha
-        // instead of surfacing a confusing error to the user.
-        if(res.status === 409 && attempt < 4){
-          // Small random backoff so multiple simultaneous writers don't
-          // immediately collide again on their retries.
-          await new Promise(r => setTimeout(r, 250 + Math.random() * 400));
-          return await githubSave(attempt + 1);
-        }
         throw new Error(`GitHub error ${res.status}: ${err}`);
       }
       const json = await res.json();
@@ -753,26 +773,28 @@
     renderCategories();
     renderBudget();
     renderDailyLimit();
+    renderPlanned();
   }
 
   function renderHome(){
-    // Home is expense-only: income no longer factors into the daily/period
-    // net here. Income only shows up in Reports (Monthly / Fin. Year), where
-    // it's shown alongside that period's net P&L.
-    const list = visibleEntries().filter(e=>e.type==="expense");
+    const list = visibleEntries();
     const { start, end } = periodRange(homePeriod);
     const periodList = list.filter(e => e.date >= start && e.date <= end);
 
-    const periodExpense = periodList.reduce((s,e)=> s + num(e.amount), 0);
+    const periodIncome = periodList.filter(e=>e.type==="income").reduce((s,e)=> s + num(e.amount), 0);
+    const periodExpense = periodList.filter(e=>e.type==="expense").reduce((s,e)=> s + num(e.amount), 0);
+    const periodNet = periodIncome - periodExpense;
 
-    $("heroLabel").textContent = PERIOD_LABELS[homePeriod] + "'s Expense";
-    $("heroValue").textContent = periodExpense>0 ? "-"+fmt(periodExpense) : fmt(0);
-    $("heroValue").className = "hero-value " + (periodExpense>0 ? "neg" : "pos");
+    $("heroLabel").textContent = PERIOD_LABELS[homePeriod] + "'s Net";
+    $("heroValue").textContent = (periodNet>=0?"+":"-") + fmt(Math.abs(periodNet));
+    $("heroValue").className = "hero-value " + (periodNet>=0?"pos":"neg");
+    $("heroIncome").textContent = fmt(periodIncome);
     $("heroExpense").textContent = fmt(periodExpense);
 
-    const allExpense = list.reduce((s,e)=> s + num(e.amount), 0);
-    $("alltimeNet").textContent = fmt(allExpense);
-    $("alltimeNet").className = allExpense>0 ? "neg" : "pos";
+    const allIncome = list.filter(e=>e.type==="income").reduce((s,e)=> s + num(e.amount), 0);
+    const allExpense = list.filter(e=>e.type==="expense").reduce((s,e)=> s + num(e.amount), 0);
+    $("alltimeNet").textContent = fmt(allIncome - allExpense);
+    $("alltimeNet").className = (allIncome-allExpense)>=0 ? "pos" : "neg";
 
     const sorted = [...periodList].sort((a,b)=> b.date.localeCompare(a.date) || (b.id||"").localeCompare(a.id||""));
     const container = $("dailyLog");
@@ -790,8 +812,8 @@
         cur.items.push(e);
       }
       for(const g of groups){
-        const dayExpense = g.items.reduce((s,e)=> s + num(e.amount), 0);
-        const headerHtml = `<div class="day-header"><span>${dateHeaderLabel(g.date)}</span><span class="day-net ${dayExpense>0?'neg':'pos'}">${dayExpense>0?'-':''}${fmt(dayExpense)}</span></div>`;
+        const dayNet = g.items.reduce((s,e)=> s + (e.type==="income"?num(e.amount):-num(e.amount)), 0);
+        const headerHtml = `<div class="day-header"><span>${dateHeaderLabel(g.date)}</span><span class="day-net ${dayNet>=0?'pos':'neg'}">${dayNet>=0?'+':'-'}${fmt(Math.abs(dayNet))}</span></div>`;
         const rowsHtml = g.items.map(e=>{
           const editable = canEdit(e);
           const who = findUser(e.user) ? findUser(e.user).label : e.user;
@@ -1006,6 +1028,92 @@
         <span style="font-size:20px;font-weight:800;color:${color};">${label} ${fmt(Math.abs(diff))}</span>
       </div>
     `;
+  }
+
+  function renderPlanned(){
+    const container = $("plannedList");
+    const addBtn = $("addPlannedBtn");
+    const uname = viewedUsername();
+    if(!uname){
+      container.innerHTML = `<div class="empty">Pick a specific user in "Viewing" above to see and manage their planned expenses.</div>`;
+      if(addBtn) addBtn.style.display = "none";
+      return;
+    }
+    if(addBtn) addBtn.style.display = "";
+
+    const todayStr = new Date().toISOString().slice(0,10);
+    const list = planned.filter(p=> p.user===uname);
+    const undone = list.filter(p=>!p.done).sort((a,b)=> (a.dueDate||"9999-99-99").localeCompare(b.dueDate||"9999-99-99"));
+    const done = list.filter(p=>p.done).sort((a,b)=> (b.dueDate||"").localeCompare(a.dueDate||""));
+    const sorted = [...undone, ...done];
+
+    if(!sorted.length){
+      container.innerHTML = `<div class="empty">No planned expenses yet. Add one above.</div>`;
+      return;
+    }
+
+    container.innerHTML = sorted.map(p=>{
+      const overdue = !p.done && p.dueDate && p.dueDate < todayStr;
+      const editable = currentUser.role === "admin" || p.user === currentUser.username;
+      return `<div class="planned-item ${p.done?'done':''}">
+        <div class="planned-check ${p.done?'done':''}" data-toggle="${p.id}">${p.done?'✓':''}</div>
+        <div class="planned-body">
+          <div class="planned-title">${p.title}</div>
+          <div class="planned-meta ${overdue?'overdue':''}">${p.dueDate ? (overdue ? "Overdue · " : "Due ") + dateHeaderLabel(p.dueDate) : "No due date"}</div>
+          ${p.note ? `<div class="entry-note" style="margin-top:2px;white-space:normal;">${p.note.replace(/</g,"&lt;")}</div>` : ""}
+          ${editable ? `<div class="planned-actions"><button class="ghost" data-del-planned="${p.id}">Delete</button></div>` : ""}
+        </div>
+        <div class="planned-amount ${p.done?'':'neg'}">${fmt(p.amount)}</div>
+      </div>`;
+    }).join("");
+
+    container.querySelectorAll("[data-toggle]").forEach(el=> el.onclick = ()=> togglePlannedDone(el.dataset.toggle));
+    container.querySelectorAll("[data-del-planned]").forEach(b=> b.onclick = ()=> deletePlannedItem(b.dataset.delPlanned));
+  }
+
+  function addPlanned(){
+    const title = $("p_title").value.trim();
+    const amount = num($("p_amount").value);
+    const dueDate = $("p_date").value;
+    if(!title){ toast("Give it a title", "error"); return; }
+    if(amount <= 0){ toast("Enter an amount greater than 0", "error"); return; }
+    planned.push({
+      id: uid(),
+      user: currentUser.username,
+      title,
+      amount,
+      dueDate: dueDate || "",
+      note: $("p_note").value.trim(),
+      done: false
+    });
+    persistCache();
+    renderPlanned();
+    $("p_title").value = "";
+    $("p_amount").value = "";
+    $("p_note").value = "";
+    toast("Saving...");
+    githubSave().then(ok=>{ if(ok) toast("Reminder saved & synced", "success"); });
+  }
+
+  function togglePlannedDone(id){
+    const item = planned.find(p=>p.id===id);
+    if(!item) return;
+    if(!(currentUser.role === "admin" || item.user === currentUser.username)) return;
+    item.done = !item.done;
+    persistCache();
+    renderPlanned();
+    githubSave().then(ok=>{ if(ok) toast(item.done ? "Marked done & synced" : "Reopened & synced", "success"); });
+  }
+
+  function deletePlannedItem(id){
+    const item = planned.find(p=>p.id===id);
+    if(!item) return;
+    if(!(currentUser.role === "admin" || item.user === currentUser.username)) return;
+    if(!confirm(`Delete "${item.title}"?`)) return;
+    planned = planned.filter(p=>p.id!==id);
+    persistCache();
+    renderPlanned();
+    githubSave().then(ok=>{ if(ok) toast("Deleted & synced", "success"); });
   }
 
   function renderBudget(){
@@ -1294,6 +1402,8 @@
     $("settingsSaveBtn").onclick = saveSettings;
     $("switchUserBtn").onclick = logout;
     $("saveBudgetsBtn").onclick = saveBudgets;
+    $("addPlannedBtn").onclick = addPlanned;
+    $("p_date").value = new Date().toISOString().slice(0,10);
     $("periodSelect").value = homePeriod;
     $("periodSelect").onchange = (e)=>{ homePeriod = e.target.value; renderHome(); };
     $("monthPrevBtn").onclick = ()=>{ selectedMonthKey = shiftMonthKey(selectedMonthKey, -1); renderMonthly(); };
@@ -1316,22 +1426,7 @@
 
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("service-worker.js").then((reg) => {
-        // Proactively check for a newer service worker instead of waiting
-        // for the browser's own update cycle (which can take up to a day).
-        reg.update().catch(() => {});
-        setInterval(() => reg.update().catch(() => {}), 60 * 1000);
-      }).catch(() => {});
-
-      // As soon as a new service worker takes control, reload once so the
-      // page (and its cached assets) actually reflect the update — this
-      // replaces the old "close the app twice" workaround.
-      let reloaded = false;
-      navigator.serviceWorker.addEventListener("controllerchange", () => {
-        if(reloaded) return;
-        reloaded = true;
-        window.location.reload();
-      });
+      navigator.serviceWorker.register("service-worker.js").catch(() => {});
     });
   }
 })();
