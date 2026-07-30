@@ -954,6 +954,15 @@
       "dueDate": "2026-10-06",
       "note": "",
       "done": false
+    },
+    {
+      "id": "2f3ae540-6103-4892-8c94-e25b0fd7cb59",
+      "user": "yonko",
+      "title": "Creatine",
+      "amount": 500,
+      "dueDate": "2026-10-06",
+      "note": "",
+      "done": false
     }
   ]
 }
