@@ -879,6 +879,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Peda for pooja"
+    },
+    {
+      "id": "7744cbf7-ec5f-4b07-b08d-5454307d6db2",
+      "date": "2026-07-30",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 20,
+      "category": "Fun",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
