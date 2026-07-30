@@ -936,6 +936,15 @@
       "dueDate": "2026-08-08",
       "note": "",
       "done": false
+    },
+    {
+      "id": "41a4c73e-9e69-4c11-887d-b2cac5aace92",
+      "user": "yonko",
+      "title": "Undrqear",
+      "amount": 400,
+      "dueDate": "2026-08-31",
+      "note": "Underwear",
+      "done": false
     }
   ]
 }
