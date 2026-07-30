@@ -945,6 +945,15 @@
       "dueDate": "2026-08-31",
       "note": "Underwear",
       "done": false
+    },
+    {
+      "id": "38a26d60-4dce-47a6-a7c5-00eb00ffafbe",
+      "user": "yonko",
+      "title": "Facewash",
+      "amount": 400,
+      "dueDate": "2026-10-06",
+      "note": "",
+      "done": false
     }
   ]
 }
