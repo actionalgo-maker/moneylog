@@ -979,6 +979,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Frizzy anaprashan"
+    },
+    {
+      "id": "7af4d177-0e7b-4cd2-9efc-e05d01f24cfc",
+      "date": "2026-07-31",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 330,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Anaprashan veggi"
     }
   ],
   "budgets": [],
