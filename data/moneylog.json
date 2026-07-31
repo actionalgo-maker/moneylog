@@ -939,6 +939,16 @@
       "category": "Fun",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "091804ca-d3d2-4d6f-b602-c210f9e04f7c",
+      "date": "2026-07-31",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 250,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Biwi haircut"
     }
   ],
   "budgets": [],
