@@ -949,6 +949,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Biwi haircut"
+    },
+    {
+      "id": "a04ca0b6-772f-4cea-98e1-92bf5e5b83d1",
+      "date": "2026-07-31",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 150,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Frizzy anaprashan"
     }
   ],
   "budgets": [],
