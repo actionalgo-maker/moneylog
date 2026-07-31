@@ -959,6 +959,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Frizzy anaprashan"
+    },
+    {
+      "id": "14b9c639-f3e6-48a7-ac9b-44ecc22c1a79",
+      "date": "2026-07-31",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 550,
+      "category": "Shopping",
+      "method": "Cash",
+      "note": "Frizzy shop"
     }
   ],
   "budgets": [],
