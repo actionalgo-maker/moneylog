@@ -1019,6 +1019,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Ghee khowa"
+    },
+    {
+      "id": "f5b43ac9-c16f-4f46-b08b-4a2adbc30abc",
+      "date": "2026-08-01",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 150,
+      "category": "Fun",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
