@@ -1039,6 +1039,16 @@
       "category": "Food",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "96f898a0-7930-48d6-b6a8-3939ba772192",
+      "date": "2026-08-01",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 550,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Anaprashan"
     }
   ],
   "budgets": [],
