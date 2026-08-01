@@ -989,6 +989,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Anaprashan veggi"
+    },
+    {
+      "id": "4a31f92b-2132-4eea-b493-4d7d1b0c970f",
+      "date": "2026-08-01",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 70,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Mandir"
     }
   ],
   "budgets": [],
