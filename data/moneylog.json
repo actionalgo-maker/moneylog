@@ -999,6 +999,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Mandir"
+    },
+    {
+      "id": "731f67ca-5ad6-4290-ae62-1286b8fbc764",
+      "date": "2026-08-01",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 50,
+      "category": "Food",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
