@@ -1049,6 +1049,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Anaprashan"
+    },
+    {
+      "id": "174414ff-6835-48ce-b864-a914d4845b70",
+      "date": "2026-08-01",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 1000,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Flower anaprashan"
     }
   ],
   "budgets": [],
