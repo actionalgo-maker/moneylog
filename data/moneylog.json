@@ -1009,6 +1009,16 @@
       "category": "Food",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "cb4ce171-418b-43ef-818e-c0d052d546d4",
+      "date": "2026-08-01",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 850,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Ghee khowa"
     }
   ],
   "budgets": [],
