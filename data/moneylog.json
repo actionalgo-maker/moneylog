@@ -1175,7 +1175,7 @@
       "amount": 5000,
       "dueDate": "2026-08-08",
       "note": "",
-      "done": false
+      "done": true
     },
     {
       "id": "41a4c73e-9e69-4c11-887d-b2cac5aace92",
