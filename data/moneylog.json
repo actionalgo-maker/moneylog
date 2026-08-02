@@ -1099,6 +1099,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Sweet fruits anaprashan"
+    },
+    {
+      "id": "4ece9b54-781b-48e2-93f6-fd5aae17962e",
+      "date": "2026-08-02",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 145,
+      "category": "Fun",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
