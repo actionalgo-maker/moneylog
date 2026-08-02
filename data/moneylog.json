@@ -1079,6 +1079,16 @@
       "category": "Food",
       "method": "Cash",
       "note": "Samosa"
+    },
+    {
+      "id": "000b7b86-258e-47fb-b586-3b665e0a5047",
+      "date": "2026-08-02",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 20,
+      "category": "Fun",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
