@@ -1129,6 +1129,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Fruits and plates"
+    },
+    {
+      "id": "f99976e9-54d3-42ad-98cd-c640cb7a085c",
+      "date": "2026-08-02",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 200,
+      "category": "Transport",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
