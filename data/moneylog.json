@@ -1159,6 +1159,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Birthday party"
+    },
+    {
+      "id": "7af0c04f-b311-469b-9a0a-bff54fff9c09",
+      "date": "2026-08-02",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 50,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Groc"
     }
   ],
   "budgets": [],
