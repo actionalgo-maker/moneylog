@@ -1179,6 +1179,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Dahi"
+    },
+    {
+      "id": "b02062d0-0c27-4eef-b7fd-cceb2d4e20a2",
+      "date": "2026-08-02",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 125,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Ballons anaprashan"
     }
   ],
   "budgets": [],
