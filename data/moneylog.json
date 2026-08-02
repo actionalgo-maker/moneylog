@@ -1149,6 +1149,16 @@
       "category": "Transport",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "f781a17a-d920-405b-978b-66095d036aba",
+      "date": "2026-08-02",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 5000,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Birthday party"
     }
   ],
   "budgets": [],
