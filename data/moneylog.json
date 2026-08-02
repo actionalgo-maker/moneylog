@@ -1119,6 +1119,16 @@
       "category": "Food",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "07b8b580-8c6b-45a4-9a00-97c45dfa14fa",
+      "date": "2026-08-02",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 290,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Fruits and plates"
     }
   ],
   "budgets": [],
