@@ -1069,6 +1069,16 @@
       "category": "Food",
       "method": "Cash",
       "note": "Pizza hut"
+    },
+    {
+      "id": "7b01e172-f8a6-45b6-afc5-24abf58c6939",
+      "date": "2026-08-02",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 350,
+      "category": "Food",
+      "method": "Cash",
+      "note": "Samosa"
     }
   ],
   "budgets": [],
