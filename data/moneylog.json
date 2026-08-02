@@ -1139,6 +1139,16 @@
       "category": "Transport",
       "method": "Cash",
       "note": ""
+    },
+    {
+      "id": "e1324287-1ef7-46dc-b8c4-22107b6e67e0",
+      "date": "2026-08-01",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 200,
+      "category": "Transport",
+      "method": "Cash",
+      "note": ""
     }
   ],
   "budgets": [],
