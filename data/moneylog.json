@@ -1169,6 +1169,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Groc"
+    },
+    {
+      "id": "cf6078f3-8e14-42ec-be31-e49cf3e49147",
+      "date": "2026-08-02",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 20,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Dahi"
     }
   ],
   "budgets": [],
