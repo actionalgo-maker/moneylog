@@ -1059,6 +1059,16 @@
       "category": "Bills",
       "method": "Cash",
       "note": "Flower anaprashan"
+    },
+    {
+      "id": "ee7b9131-144f-4f6a-b82c-9bc6a4a83e65",
+      "date": "2026-08-01",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 300,
+      "category": "Food",
+      "method": "Cash",
+      "note": "Pizza hut"
     }
   ],
   "budgets": [],
