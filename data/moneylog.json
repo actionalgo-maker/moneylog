@@ -1158,7 +1158,8 @@
       "amount": 5000,
       "category": "Bills",
       "method": "Cash",
-      "note": "Birthday party"
+      "note": "Birthday party",
+      "inBudget": false
     },
     {
       "id": "7af0c04f-b311-469b-9a0a-bff54fff9c09",
