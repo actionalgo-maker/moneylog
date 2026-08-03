@@ -381,18 +381,18 @@ main{max-width:640px;margin:0 auto;padding:16px;}
 <div class="screen" id="screen-budgets">
 <div class="card">
 <h1 class="screen-title">Budgets</h1>
-<p class="screen-sub">Monthly limits per category, this account only.</p>
+<p class="screen-sub">Daily spending limit &amp; category breakdown.</p>
 
 <div class="section-label">Daily Spending Limit</div>
 <div class="field">
 <label>Daily limit (per day)</label>
 <input type="number" min="0" step="0.01" id="dailyLimitInput" placeholder="e.g. 300">
 </div>
+<button id="saveBudgetsBtn" style="width:100%;margin-top:10px;margin-bottom:6px;">Save Daily Limit</button>
 <div id="dailyLimitSummary"></div>
 
-<div class="section-label" style="margin-top:20px;">Category Budgets</div>
+<div class="section-label" style="margin-top:20px;">This Month's Spending by Category</div>
 <div id="budgetList"></div>
-<button id="saveBudgetsBtn" style="width:100%;margin-top:14px;">Save Budgets</button>
 </div>
 </div>
 
@@ -1128,40 +1128,19 @@ renderPlanned();
 githubSave().then(ok=>{ if(ok) toast("Deleted & synced", "success"); });
 }
 
-// MODIFIED: renderBudget now excludes entries with inBudget === false
+// Renders category spending breakdown with expandable entries (like Reports)
 function renderBudget(){
 const container = $("budgetList");
 const uname = viewedUsername();
 if(!uname){
-container.innerHTML = `<div class="empty">Pick a specific user in "Viewing" above to see and edit their budgets.</div>`;
-$("saveBudgetsBtn").style.display = "none";
+container.innerHTML = `<div class="empty">Pick a specific user in "Viewing" above to see their spending.</div>`;
 return;
 }
-$("saveBudgetsBtn").style.display = "";
 const todayStr = new Date().toISOString().slice(0,10);
 const thisMonthKey = todayStr.slice(0,7);
-const spendByCategory = {};
-entries.filter(e=> e.user===uname && e.type==="expense" && monthKey(e.date)===thisMonthKey && e.inBudget !== false)
-.forEach(e=>{ const c = e.category || "Uncategorized"; spendByCategory[c] = (spendByCategory[c]||0) + num(e.amount); });
-
-container.innerHTML = CATEGORIES.expense.map(c=>{
-const cat = c.name;
-const b = budgets.find(x=> x.user===uname && x.category===cat);
-const budgetAmt = b ? num(b.amount) : 0;
-const spent = spendByCategory[cat] || 0;
-const pct = budgetAmt > 0 ? Math.min(150, (spent/budgetAmt)*100) : 0;
-const barClass = pct >= 100 ? "over" : (pct >= 80 ? "warn" : "");
-return `<div class="budget-row" data-cat="${cat}">
-<div class="budget-top">
-<span class="cat-chip" style="border-color:${hexToRgba(c.color,.5)};">${c.emoji} ${cat}</span>
-<span>${fmt(spent)} ${budgetAmt>0 ? "/ " + fmt(budgetAmt) : "(no budget set)"}</span>
-</div>
-${budgetAmt>0 ? `<div class="progress-track"><div class="progress-fill ${barClass}" style="width:${Math.min(100,pct)}%"></div></div>` : ""}
-<div class="budget-edit">
-<input type="number" min="0" step="0.01" class="budget-input" value="${budgetAmt||""}" placeholder="Monthly limit">
-</div>
-</div>`;
-}).join("");
+const monthEntries = entries.filter(e=> e.user===uname && e.type==="expense" && monthKey(e.date)===thisMonthKey && e.inBudget !== false);
+container.innerHTML = categorySectionHtml(monthEntries, "expense");
+if(!monthEntries.length) container.innerHTML = `<div class="empty">No expenses this month yet.</div>`;
 }
 
 function saveBudgets(){
@@ -1174,20 +1153,10 @@ if(dIdx >= 0) dailyLimits[dIdx].amount = dailyVal; else dailyLimits.push({ user:
 } else if(dIdx >= 0){
 dailyLimits.splice(dIdx,1);
 }
-document.querySelectorAll("#budgetList .budget-row").forEach(row=>{
-const cat = row.dataset.cat;
-const val = num(row.querySelector(".budget-input").value);
-const idx = budgets.findIndex(b=> b.user===uname && b.category===cat);
-if(val > 0){
-if(idx >= 0) budgets[idx].amount = val; else budgets.push({ user: uname, category: cat, amount: val });
-} else if(idx >= 0){
-budgets.splice(idx,1);
-}
-});
 persistCache();
-renderBudget();
 renderDailyLimit();
-githubSave().then(ok=>{ if(ok) toast("Budgets saved & synced", "success"); });
+renderBudget();
+githubSave().then(ok=>{ if(ok) toast("Daily limit saved & synced", "success"); });
 }
 
 function drawChart(canvasId, groups, setInst, existing){
