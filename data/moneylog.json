@@ -1200,6 +1200,17 @@
       "method": "Cash",
       "note": "emi",
       "inBudget": false
+    },
+    {
+      "id": "5c17ced6-cb33-47bf-882e-30fdaaf057d8",
+      "date": "2026-08-03",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 5000,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "em1",
+      "inBudget": false
     }
   ],
   "budgets": [],
