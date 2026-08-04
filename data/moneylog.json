@@ -1298,7 +1298,7 @@
       "amount": 5000,
       "dueDate": "2026-08-01",
       "note": "",
-      "done": false
+      "done": true
     }
   ]
 }
