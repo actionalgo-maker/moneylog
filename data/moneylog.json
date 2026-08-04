@@ -1256,15 +1256,6 @@
   ],
   "planned": [
     {
-      "id": "e245f2be-9698-4939-9eb3-19bc2a812d7a",
-      "user": "yonko",
-      "title": "frizy anaprashan",
-      "amount": 2000,
-      "dueDate": "2026-07-31",
-      "note": "",
-      "done": true
-    },
-    {
       "id": "f78f8f1e-6205-49a2-a920-2e3bf8b244fb",
       "user": "yonko",
       "title": "Birthday party",
