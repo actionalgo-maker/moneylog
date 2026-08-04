@@ -1223,6 +1223,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "c25c4972-1db2-4f39-be74-6d8293a0e02b",
+      "date": "2026-08-03",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 93,
+      "category": "Other",
+      "method": "Cash",
+      "note": "vitamine c , bikasur",
+      "inBudget": true
     }
   ],
   "budgets": [],
