@@ -1278,6 +1278,17 @@
       "method": "Cash",
       "note": "NRM",
       "inBudget": true
+    },
+    {
+      "id": "6db51bdc-b190-428f-b1fb-74fc1ec78786",
+      "date": "2026-08-04",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 6000,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "EMI",
+      "inBudget": false
     }
   ],
   "budgets": [],
