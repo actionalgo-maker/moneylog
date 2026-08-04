@@ -1290,6 +1290,15 @@
       "dueDate": "2026-10-06",
       "note": "",
       "done": false
+    },
+    {
+      "id": "2cfd2e22-c6d3-4479-a8cb-0aaedb6c6761",
+      "user": "yonko",
+      "title": "frizzy anaprashan",
+      "amount": 5000,
+      "dueDate": "2026-08-01",
+      "note": "",
+      "done": false
     }
   ]
 }
