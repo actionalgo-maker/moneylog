@@ -1267,6 +1267,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "7f61f4b5-8c2b-4c2c-b1eb-ce7742edc93f",
+      "date": "2026-08-04",
+      "user": "yonko",
+      "type": "income",
+      "amount": 6000,
+      "category": "Freelance",
+      "method": "Cash",
+      "note": "NRM",
+      "inBudget": true
     }
   ],
   "budgets": [],
