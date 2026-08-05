@@ -1285,7 +1285,7 @@
       "user": "yonko",
       "type": "expense",
       "amount": 6000,
-      "category": "Bills",
+      "category": "EMI",
       "method": "Cash",
       "note": "EMI",
       "inBudget": false
