@@ -1311,6 +1311,17 @@
       "method": "Cash",
       "note": "byke emi",
       "inBudget": false
+    },
+    {
+      "id": "895cc6de-f76a-4d78-afc9-817a3194335f",
+      "date": "2026-08-05",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 42,
+      "category": "Food",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
