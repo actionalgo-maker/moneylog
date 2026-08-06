@@ -1333,6 +1333,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "3f84ab42-3952-4696-9247-5e56195860fb",
+      "date": "2026-08-06",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 589,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "wifi",
+      "inBudget": true
     }
   ],
   "budgets": [],
