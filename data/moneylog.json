@@ -1344,6 +1344,17 @@
       "method": "Cash",
       "note": "wifi",
       "inBudget": true
+    },
+    {
+      "id": "3664a788-e107-40df-8a63-87e664a8be5c",
+      "date": "2026-08-06",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 30,
+      "category": "Food",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
