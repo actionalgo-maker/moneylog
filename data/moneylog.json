@@ -1476,6 +1476,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "ed66f0e2-67f1-4aef-8d6f-815e575b87dd",
+      "date": "2026-08-09",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 100,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Kapda astar",
+      "inBudget": true
     }
   ],
   "budgets": [],
