@@ -1487,6 +1487,17 @@
       "method": "Cash",
       "note": "Kapda astar",
       "inBudget": true
+    },
+    {
+      "id": "6dc1f084-bebf-40f1-bb57-22e52026212e",
+      "date": "2026-08-10",
+      "user": "yonko",
+      "type": "income",
+      "amount": 7500,
+      "category": "Freelance",
+      "method": "Cash",
+      "note": "suraj",
+      "inBudget": true
     }
   ],
   "budgets": [],
