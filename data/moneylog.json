@@ -1509,6 +1509,17 @@
       "method": "Cash",
       "note": "creditcard",
       "inBudget": false
+    },
+    {
+      "id": "db2cf21d-7466-446e-86ff-213e59e87042",
+      "date": "2026-08-10",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 50,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
