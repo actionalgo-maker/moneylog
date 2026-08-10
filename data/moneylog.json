@@ -1498,6 +1498,17 @@
       "method": "Cash",
       "note": "suraj",
       "inBudget": true
+    },
+    {
+      "id": "bf883d12-4014-4b3d-8578-c3b6087db545",
+      "date": "2026-08-10",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 10500,
+      "category": "EMI",
+      "method": "Cash",
+      "note": "creditcard",
+      "inBudget": false
     }
   ],
   "budgets": [],
