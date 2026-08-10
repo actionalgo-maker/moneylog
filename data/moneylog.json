@@ -1574,6 +1574,15 @@
       "dueDate": "2026-08-01",
       "note": "",
       "done": true
+    },
+    {
+      "id": "e477630c-20c4-43be-b990-cf8932b05f81",
+      "user": "yonko",
+      "title": "rakhi",
+      "amount": 2500,
+      "dueDate": "2026-08-31",
+      "note": "rakhi",
+      "done": false
     }
   ]
 }
