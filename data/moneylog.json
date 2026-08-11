@@ -1553,6 +1553,17 @@
       "method": "Cash",
       "note": "Frizzy cutting",
       "inBudget": true
+    },
+    {
+      "id": "05c79d9a-c1e0-43cd-8c64-1ee216f81844",
+      "date": "2026-08-11",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 329,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Figaro oil",
+      "inBudget": true
     }
   ],
   "budgets": [],
