@@ -1594,6 +1594,15 @@
       "dueDate": "2026-08-31",
       "note": "rakhi",
       "done": false
+    },
+    {
+      "id": "b42f037b-2b24-45a1-a598-7090b257c3a1",
+      "user": "yonko",
+      "title": "Vaccine fizzy",
+      "amount": 2000,
+      "dueDate": "2026-08-24",
+      "note": "",
+      "done": false
     }
   ]
 }
