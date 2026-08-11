@@ -1564,6 +1564,17 @@
       "method": "Cash",
       "note": "Figaro oil",
       "inBudget": true
+    },
+    {
+      "id": "8ee21c28-a4f2-48f8-bb3c-15b05f3061fc",
+      "date": "2026-08-11",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 30,
+      "category": "Food",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
