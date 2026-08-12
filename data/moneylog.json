@@ -1671,6 +1671,15 @@
       "dueDate": "2026-08-24",
       "note": "",
       "done": false
+    },
+    {
+      "id": "aa4099fb-a501-4569-b81f-edf0c476d997",
+      "user": "yonko",
+      "title": "underwear",
+      "amount": 1,
+      "dueDate": "2026-08-12",
+      "note": "",
+      "done": false
     }
   ]
 }
