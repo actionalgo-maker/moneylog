@@ -1679,7 +1679,7 @@
       "amount": 1,
       "dueDate": "2026-08-12",
       "note": "",
-      "done": false
+      "done": true
     }
   ]
 }
