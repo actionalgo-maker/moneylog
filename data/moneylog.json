@@ -1630,6 +1630,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "371a47ce-47b1-4c42-8cd7-e24ab746f948",
+      "date": "2026-08-12",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 4820,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Groceray",
+      "inBudget": true
     }
   ],
   "budgets": [],
