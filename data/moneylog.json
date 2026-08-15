@@ -1718,6 +1718,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "ed82188e-b922-4416-9489-aefe8c521ade",
+      "date": "2026-08-14",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 30,
+      "category": "Shopping",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
