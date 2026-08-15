@@ -1757,10 +1757,10 @@
       "date": "2026-08-15",
       "user": "yonko",
       "type": "expense",
-      "amount": 1,
-      "category": "Food",
+      "amount": 190,
+      "category": "Bills",
       "method": "Cash",
-      "note": "",
+      "note": "Rastaj sweet",
       "inBudget": true
     }
   ],
