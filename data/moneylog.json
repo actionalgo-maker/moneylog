@@ -1762,6 +1762,17 @@
       "method": "Cash",
       "note": "Rastaj sweet",
       "inBudget": true
+    },
+    {
+      "id": "395b773d-721b-4996-a696-9de134e6bb79",
+      "date": "2026-08-15",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 34,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
