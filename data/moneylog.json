@@ -1828,6 +1828,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "8548d9b5-dd7e-4579-b2d0-d690130e2667",
+      "date": "2026-08-18",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 1300,
+      "category": "Shopping",
+      "method": "Cash",
+      "note": "Mom's birthday cake and dress",
+      "inBudget": true
     }
   ],
   "budgets": [],
