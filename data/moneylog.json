@@ -1883,6 +1883,17 @@
       "method": "Cash",
       "note": "naryal",
       "inBudget": true
+    },
+    {
+      "id": "8c7650fb-c4de-406d-9dac-b4dba269e30e",
+      "date": "2026-08-20",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 20,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
