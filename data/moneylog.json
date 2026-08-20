@@ -1872,6 +1872,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "3f9879e0-31f4-4166-9c73-16a1e56c04a7",
+      "date": "2026-08-20",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 30,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "naryal",
+      "inBudget": true
     }
   ],
   "budgets": [],
