@@ -1960,6 +1960,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "6ba2e29c-9d2e-45d7-99ae-48a4d9f0a2fb",
+      "date": "2026-08-22",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 40,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Temple",
+      "inBudget": true
     }
   ],
   "budgets": [],
