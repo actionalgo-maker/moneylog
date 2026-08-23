@@ -1993,6 +1993,17 @@
       "method": "Cash",
       "note": "Puncture",
       "inBudget": true
+    },
+    {
+      "id": "263f41a1-26b3-41a4-8d32-32f287b4a884",
+      "date": "2026-08-23",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 25,
+      "category": "Food",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
