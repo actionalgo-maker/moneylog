@@ -2015,6 +2015,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "d5bc2e1c-c306-4be0-ba1b-44a3cb26b68f",
+      "date": "2026-08-23",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 520,
+      "category": "Food",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
