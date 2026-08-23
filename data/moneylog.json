@@ -1971,6 +1971,17 @@
       "method": "Cash",
       "note": "Temple",
       "inBudget": true
+    },
+    {
+      "id": "7183e245-cf22-4fc0-afd0-5e0b45cd2ca7",
+      "date": "2026-08-22",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 200,
+      "category": "Transport",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
