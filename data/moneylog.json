@@ -2026,6 +2026,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "cd2c06cb-0240-42c5-b7c4-3bd5115d0a4f",
+      "date": "2026-08-23",
+      "user": "yonko",
+      "type": "income",
+      "amount": 3000,
+      "category": "Freelance",
+      "method": "Cash",
+      "note": "Kartik",
+      "inBudget": true
     }
   ],
   "budgets": [],
