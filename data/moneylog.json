@@ -2118,6 +2118,15 @@
       "dueDate": "2026-09-01",
       "note": "",
       "done": false
+    },
+    {
+      "id": "e5d92cd8-31f8-4c91-81a8-72457ba011da",
+      "user": "yonko",
+      "title": "Soaks",
+      "amount": 300,
+      "dueDate": "2026-09-01",
+      "note": "",
+      "done": false
     }
   ]
 }
