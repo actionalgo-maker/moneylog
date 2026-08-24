@@ -2109,6 +2109,15 @@
       "dueDate": "2026-08-12",
       "note": "",
       "done": true
+    },
+    {
+      "id": "da819883-562f-4c92-829c-77d1c2943a6a",
+      "user": "yonko",
+      "title": "Shoe bag",
+      "amount": 200,
+      "dueDate": "2026-09-01",
+      "note": "",
+      "done": false
     }
   ]
 }
