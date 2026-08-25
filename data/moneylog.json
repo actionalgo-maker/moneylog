@@ -2048,6 +2048,17 @@
       "method": "Cash",
       "note": "fizzy vaccine",
       "inBudget": true
+    },
+    {
+      "id": "bfb2e1fc-03b9-4a27-b717-5166a906a377",
+      "date": "2026-08-24",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 300,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Recharge",
+      "inBudget": true
     }
   ],
   "budgets": [],
