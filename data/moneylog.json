@@ -2037,6 +2037,17 @@
       "method": "Cash",
       "note": "Kartik",
       "inBudget": true
+    },
+    {
+      "id": "6181caa6-6297-423a-9801-1dee84a9a304",
+      "date": "2026-08-24",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 2000,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "fizzy vaccine",
+      "inBudget": true
     }
   ],
   "budgets": [],
