@@ -2103,6 +2103,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "5b025975-0c96-4dfd-87a1-24f3591c5e70",
+      "date": "2026-08-25",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 200,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Shoe bag",
+      "inBudget": true
     }
   ],
   "budgets": [],
