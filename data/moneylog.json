@@ -2169,6 +2169,17 @@
       "method": "Cash",
       "note": "suraj sir",
       "inBudget": true
+    },
+    {
+      "id": "089467e7-538f-4ff2-874f-28aab66ece96",
+      "date": "2026-08-26",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 180,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Press",
+      "inBudget": true
     }
   ],
   "budgets": [],
