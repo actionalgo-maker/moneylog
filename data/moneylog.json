@@ -2180,6 +2180,17 @@
       "method": "Cash",
       "note": "Press",
       "inBudget": true
+    },
+    {
+      "id": "ec522798-f553-417b-ab6f-849e8f31e363",
+      "date": "2026-08-26",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 750,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Thailand mela",
+      "inBudget": true
     }
   ],
   "budgets": [],
