@@ -2158,17 +2158,6 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
-    },
-    {
-      "id": "059391b6-c36d-4461-8f4d-22dedc504dd9",
-      "date": "2026-08-26",
-      "user": "yonko",
-      "type": "income",
-      "amount": 7500,
-      "category": "Salary",
-      "method": "Cash",
-      "note": "suraj sir",
-      "inBudget": true
     }
   ],
   "budgets": [],
