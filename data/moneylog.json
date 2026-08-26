@@ -2158,6 +2158,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "ec896452-554d-48c5-ba8f-01500d3cb264",
+      "date": "2026-08-26",
+      "user": "yonko",
+      "type": "income",
+      "amount": 7500,
+      "category": "Freelance",
+      "method": "Cash",
+      "note": "suraj sir",
+      "inBudget": true
     }
   ],
   "budgets": [],
