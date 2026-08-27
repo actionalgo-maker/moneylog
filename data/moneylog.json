@@ -2191,6 +2191,17 @@
       "method": "Cash",
       "note": "Thailand mela",
       "inBudget": true
+    },
+    {
+      "id": "08cf746d-0345-42b7-8a09-e7dba45c1ef4",
+      "date": "2026-08-27",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 30,
+      "category": "Food",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
