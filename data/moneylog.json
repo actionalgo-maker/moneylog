@@ -2224,6 +2224,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "38572677-65fb-43e5-a387-bcd7403bb71c",
+      "date": "2026-08-27",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 200,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Milk",
+      "inBudget": true
     }
   ],
   "budgets": [],
