@@ -2268,6 +2268,17 @@
       "method": "Cash",
       "note": "Mithai takhi",
       "inBudget": true
+    },
+    {
+      "id": "f3dc399c-c91d-4f07-8ed1-c0956468142d",
+      "date": "2026-08-28",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 150,
+      "category": "Food",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
