@@ -2323,6 +2323,17 @@
       "method": "Cash",
       "note": "Cacha mail kaode",
       "inBudget": true
+    },
+    {
+      "id": "c789c123-5ec3-4b79-a40d-f3275e22007c",
+      "date": "2026-08-29",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 40,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
