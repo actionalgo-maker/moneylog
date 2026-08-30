@@ -2345,6 +2345,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "3329d86e-3f08-4edb-b5e1-e378d73b710b",
+      "date": "2026-08-30",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 1000,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Rakhi",
+      "inBudget": true
     }
   ],
   "budgets": [],
