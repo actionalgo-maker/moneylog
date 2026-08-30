@@ -2312,6 +2312,17 @@
       "method": "Cash",
       "note": "Temple",
       "inBudget": true
+    },
+    {
+      "id": "0d96cfd6-3f69-4d67-93fc-28232f029951",
+      "date": "2026-08-29",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 500,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Cacha mail kaode",
+      "inBudget": true
     }
   ],
   "budgets": [],
