@@ -2356,6 +2356,17 @@
       "method": "Cash",
       "note": "Rakhi",
       "inBudget": true
+    },
+    {
+      "id": "a9ad159d-6a6c-4502-a297-dae157500f29",
+      "date": "2026-08-30",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 230,
+      "category": "Food",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
