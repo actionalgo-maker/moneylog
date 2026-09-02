@@ -2400,6 +2400,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "9a800d21-7972-4ddc-9581-ef013869e17e",
+      "date": "2026-09-01",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 150,
+      "category": "Food",
+      "method": "Cash",
+      "note": "panner + nasta",
+      "inBudget": true
     }
   ],
   "budgets": [],
