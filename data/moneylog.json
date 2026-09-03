@@ -2466,6 +2466,17 @@
       "method": "Cash",
       "note": "Med",
       "inBudget": true
+    },
+    {
+      "id": "767431ad-df83-4d4e-9245-05b4e0f7d3f1",
+      "date": "2026-09-02",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 180,
+      "category": "Food",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
