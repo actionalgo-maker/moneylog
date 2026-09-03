@@ -2424,17 +2424,6 @@
       "inBudget": true
     },
     {
-      "id": "7da2bd39-c5eb-4f1e-9a68-16e739348182",
-      "date": "2026-09-02",
-      "user": "yonko",
-      "type": "expense",
-      "amount": 30,
-      "category": "Food",
-      "method": "Cash",
-      "note": "",
-      "inBudget": true
-    },
-    {
       "id": "52ff9d20-9fc7-4020-b285-65e5e819ddda",
       "date": "2026-09-02",
       "user": "yonko",
