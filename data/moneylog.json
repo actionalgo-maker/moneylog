@@ -2455,6 +2455,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "2e3689f9-a3bf-487f-8df9-7f6e18dc7d0a",
+      "date": "2026-09-02",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 212,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Med",
+      "inBudget": true
     }
   ],
   "budgets": [],
