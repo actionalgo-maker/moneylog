@@ -2521,6 +2521,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "d28d1e20-9ac9-4724-88d4-2285d4c45472",
+      "date": "2026-09-04",
+      "user": "yonko",
+      "type": "income",
+      "amount": 12000,
+      "category": "Freelance",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
