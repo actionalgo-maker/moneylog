@@ -2554,6 +2554,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "2ccb4e97-e82a-4928-a501-e1680a461449",
+      "date": "2026-09-05",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 55,
+      "category": "Food",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
