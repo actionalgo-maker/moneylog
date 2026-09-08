@@ -2620,6 +2620,17 @@
       "method": "Cash",
       "note": "panner",
       "inBudget": true
+    },
+    {
+      "id": "a141453e-cc63-44ca-ab75-1e29d3e94cfb",
+      "date": "2026-09-07",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 300,
+      "category": "Food",
+      "method": "Cash",
+      "note": "cale",
+      "inBudget": true
     }
   ],
   "budgets": [],
