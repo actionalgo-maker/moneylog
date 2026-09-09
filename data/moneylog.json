@@ -2664,6 +2664,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "018cac19-83a5-43d5-b375-d2f304fe1a5b",
+      "date": "2026-09-09",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 315,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "diaper",
+      "inBudget": true
     }
   ],
   "budgets": [],
