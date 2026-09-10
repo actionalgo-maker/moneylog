@@ -2686,6 +2686,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "75397a08-4661-45a1-a2d1-27c03729da89",
+      "date": "2026-09-09",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 390,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "ganpati dec",
+      "inBudget": true
     }
   ],
   "budgets": [],
