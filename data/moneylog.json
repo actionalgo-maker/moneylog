@@ -2675,6 +2675,17 @@
       "method": "Cash",
       "note": "diaper",
       "inBudget": true
+    },
+    {
+      "id": "596d0531-417d-44b6-98a4-5a12172436cc",
+      "date": "2026-09-10",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 150,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
