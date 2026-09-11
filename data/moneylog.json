@@ -2730,6 +2730,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "2be32b92-1abf-4a28-bf38-b61ee9b48bc1",
+      "date": "2026-09-10",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 70,
+      "category": "Food",
+      "method": "Cash",
+      "note": "chicken cfc",
+      "inBudget": true
     }
   ],
   "budgets": [],
