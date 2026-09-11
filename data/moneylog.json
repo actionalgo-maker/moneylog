@@ -2719,6 +2719,17 @@
       "method": "Cash",
       "note": "nseal fevicol",
       "inBudget": true
+    },
+    {
+      "id": "a0a8971f-e672-4b92-9a62-be4e83aabafc",
+      "date": "2026-09-10",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 150,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
