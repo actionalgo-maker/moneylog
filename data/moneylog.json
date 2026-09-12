@@ -2752,6 +2752,17 @@
       "method": "Cash",
       "note": "Icecream",
       "inBudget": true
+    },
+    {
+      "id": "6aeeffd9-9d18-457e-9293-d53d6ab70cb6",
+      "date": "2026-09-11",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 550,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
