@@ -2741,6 +2741,17 @@
       "method": "Cash",
       "note": "chicken cfc",
       "inBudget": true
+    },
+    {
+      "id": "aeded036-130e-4c5f-a9d7-22f4625c8033",
+      "date": "2026-09-11",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 200,
+      "category": "Food",
+      "method": "Cash",
+      "note": "Icecream",
+      "inBudget": true
     }
   ],
   "budgets": [],
