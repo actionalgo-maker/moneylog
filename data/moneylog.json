@@ -2774,6 +2774,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "ff80a87d-0418-4c3b-a8f2-ed495662889a",
+      "date": "2026-09-12",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 3400,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Kirana",
+      "inBudget": true
     }
   ],
   "budgets": [],
