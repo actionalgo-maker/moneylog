@@ -2785,6 +2785,17 @@
       "method": "Cash",
       "note": "Kirana",
       "inBudget": true
+    },
+    {
+      "id": "71dc8b51-25ee-4adc-8cd5-dd5c9c82a4f7",
+      "date": "2026-09-12",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 500,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Ganpati decor",
+      "inBudget": true
     }
   ],
   "budgets": [],
