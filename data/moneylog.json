@@ -2873,6 +2873,17 @@
       "method": "Cash",
       "note": "ganpati and decor",
       "inBudget": true
+    },
+    {
+      "id": "72da7200-a9a4-4c90-b7c0-8af4c6624fbe",
+      "date": "2026-09-14",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 150,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
