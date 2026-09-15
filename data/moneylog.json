@@ -2840,6 +2840,17 @@
       "method": "Cash",
       "note": "Frizy cycle",
       "inBudget": true
+    },
+    {
+      "id": "a427c786-b24c-44ed-aaf1-7e493b81168b",
+      "date": "2026-09-13",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 400,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
