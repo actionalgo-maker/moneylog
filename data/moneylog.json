@@ -2862,6 +2862,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "4ec453c5-b05d-4e3a-bc38-8362e0aa36f9",
+      "date": "2026-09-14",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 1550,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "ganpati and decor",
+      "inBudget": true
     }
   ],
   "budgets": [],
