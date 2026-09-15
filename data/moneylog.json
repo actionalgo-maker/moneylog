@@ -2894,7 +2894,7 @@
       "category": "EMI",
       "method": "Cash",
       "note": "byk emi",
-      "inBudget": true
+      "inBudget": false
     }
   ],
   "budgets": [],
