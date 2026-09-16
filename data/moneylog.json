@@ -2895,6 +2895,17 @@
       "method": "Cash",
       "note": "byk emi",
       "inBudget": false
+    },
+    {
+      "id": "db5ff2a6-3461-4c27-987d-c436824a0295",
+      "date": "2026-09-15",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 150,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
