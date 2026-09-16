@@ -2917,6 +2917,17 @@
       "method": "Cash",
       "note": "flower",
       "inBudget": true
+    },
+    {
+      "id": "59800414-4d8b-41bb-ab67-5bf2cc2056bf",
+      "date": "2026-09-16",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 5100,
+      "category": "EMI",
+      "method": "Cash",
+      "note": "credit card",
+      "inBudget": false
     }
   ],
   "budgets": [],
