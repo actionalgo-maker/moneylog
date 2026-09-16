@@ -2906,6 +2906,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "9a5e453c-6bbf-4ead-9e55-71afa7f0da97",
+      "date": "2026-09-15",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 30,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "flower",
+      "inBudget": true
     }
   ],
   "budgets": [],
