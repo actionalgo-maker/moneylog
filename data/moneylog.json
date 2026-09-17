@@ -2928,6 +2928,17 @@
       "method": "Cash",
       "note": "credit card",
       "inBudget": false
+    },
+    {
+      "id": "9f9a90ff-381f-4503-a5b8-f7adcfb8e42e",
+      "date": "2026-09-16",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 200,
+      "category": "Transport",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
