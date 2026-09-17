@@ -2950,6 +2950,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "7466dcc2-4625-4142-9457-6a8ba3412aa6",
+      "date": "2026-09-17",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 180,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "peda",
+      "inBudget": true
     }
   ],
   "budgets": [],
