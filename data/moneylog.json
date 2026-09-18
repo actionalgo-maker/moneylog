@@ -2972,6 +2972,17 @@
       "method": "Cash",
       "note": "haircut",
       "inBudget": true
+    },
+    {
+      "id": "4b52abe9-a145-45cc-a01a-fea4c1c37dfe",
+      "date": "2026-09-18",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 40,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
