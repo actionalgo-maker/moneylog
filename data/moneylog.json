@@ -2961,6 +2961,17 @@
       "method": "Cash",
       "note": "peda",
       "inBudget": true
+    },
+    {
+      "id": "5e593cad-803d-44db-95c0-4fe8c5a75570",
+      "date": "2026-09-17",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 120,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "haircut",
+      "inBudget": true
     }
   ],
   "budgets": [],
