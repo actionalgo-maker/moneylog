@@ -3005,6 +3005,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "f9c6902e-64aa-493b-9f91-1120c83a6276",
+      "date": "2026-09-18",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 9000,
+      "category": "EMI",
+      "method": "Cash",
+      "note": "",
+      "inBudget": false
     }
   ],
   "budgets": [],
