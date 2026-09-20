@@ -3027,6 +3027,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "6f73af58-d022-40bc-b409-309bee8bee20",
+      "date": "2026-09-20",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 160,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Vegi",
+      "inBudget": true
     }
   ],
   "budgets": [],
