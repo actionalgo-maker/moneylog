@@ -3049,6 +3049,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "0897e33b-bb4b-4869-81c1-d6f5440090a5",
+      "date": "2026-09-19",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 40,
+      "category": "Food",
+      "method": "Cash",
+      "note": "Temple",
+      "inBudget": true
     }
   ],
   "budgets": [],
