@@ -3038,6 +3038,17 @@
       "method": "Cash",
       "note": "Vegi",
       "inBudget": true
+    },
+    {
+      "id": "33068622-790e-418a-a279-5a8b62650471",
+      "date": "2026-09-19",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 90,
+      "category": "Food",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
