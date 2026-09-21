@@ -3115,6 +3115,17 @@
       "method": "Cash",
       "note": "aalu",
       "inBudget": true
+    },
+    {
+      "id": "e840cf61-17ec-4e77-938b-3771559d6184",
+      "date": "2026-09-21",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 85,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "burn oll",
+      "inBudget": true
     }
   ],
   "budgets": [],
