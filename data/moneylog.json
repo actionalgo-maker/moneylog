@@ -3071,6 +3071,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "6b2c00ec-25cc-49b5-9270-f5d69a006ee2",
+      "date": "2026-09-21",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 300,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "rechanrge",
+      "inBudget": true
     }
   ],
   "budgets": [],
