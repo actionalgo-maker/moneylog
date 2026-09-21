@@ -3082,6 +3082,17 @@
       "method": "Cash",
       "note": "rechanrge",
       "inBudget": true
+    },
+    {
+      "id": "a1f329dc-95ff-4748-b397-a39cfdfaa8d3",
+      "date": "2026-09-21",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 200,
+      "category": "Transport",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
