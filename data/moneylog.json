@@ -3137,6 +3137,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "b9e50491-859d-4f07-8273-9d9366bed4b8",
+      "date": "2026-09-23",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 145,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
