@@ -3181,6 +3181,17 @@
       "method": "Cash",
       "note": "credt card",
       "inBudget": false
+    },
+    {
+      "id": "74957cd3-05d1-4a0e-9eb5-999fabd98f3a",
+      "date": "2026-09-24",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 200,
+      "category": "Transport",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
