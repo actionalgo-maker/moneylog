@@ -3170,6 +3170,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "00969b35-648a-482c-8dc3-893a722a131f",
+      "date": "2026-09-24",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 1100,
+      "category": "EMI",
+      "method": "Cash",
+      "note": "credt card",
+      "inBudget": false
     }
   ],
   "budgets": [],
