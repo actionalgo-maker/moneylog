@@ -3203,6 +3203,17 @@
       "method": "Cash",
       "note": "Visarjan day",
       "inBudget": true
+    },
+    {
+      "id": "c2f85f07-7cfd-4332-acb6-1a2d4d74be05",
+      "date": "2026-09-26",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 1300,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
