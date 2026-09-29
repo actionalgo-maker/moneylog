@@ -3258,6 +3258,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "5d0c851c-5cbc-4e2b-9b8d-bec3308f40c9",
+      "date": "2026-09-29",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 435,
+      "category": "Shopping",
+      "method": "Cash",
+      "note": "shopp",
+      "inBudget": true
     }
   ],
   "budgets": [],
