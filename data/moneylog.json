@@ -3269,6 +3269,17 @@
       "method": "Cash",
       "note": "shopp",
       "inBudget": true
+    },
+    {
+      "id": "15a53563-326a-4b41-b2a9-036726a288e1",
+      "date": "2026-09-29",
+      "user": "yonko",
+      "type": "income",
+      "amount": 12000,
+      "category": "Freelance",
+      "method": "Cash",
+      "note": "ramesh sir",
+      "inBudget": true
     }
   ],
   "budgets": [],
