@@ -3225,6 +3225,17 @@
       "method": "Cash",
       "note": "Gauri birthday",
       "inBudget": true
+    },
+    {
+      "id": "30d03247-62a0-4042-99b6-299e9d02dcb9",
+      "date": "2026-09-28",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 20,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
