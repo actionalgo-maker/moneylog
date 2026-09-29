@@ -3280,6 +3280,17 @@
       "method": "Cash",
       "note": "ramesh sir",
       "inBudget": true
+    },
+    {
+      "id": "b444f2fa-040f-4f97-a3ab-2c1b0f17ed42",
+      "date": "2026-09-29",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 12000,
+      "category": "EMI",
+      "method": "Cash",
+      "note": "",
+      "inBudget": false
     }
   ],
   "budgets": [],
