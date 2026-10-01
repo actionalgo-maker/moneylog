@@ -3335,6 +3335,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "5733fa18-2256-448d-ba65-89afa50dad97",
+      "date": "2026-10-01",
+      "user": "yonko",
+      "type": "income",
+      "amount": 41000,
+      "category": "Salary",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
