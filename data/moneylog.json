@@ -3346,6 +3346,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "3a1279a1-2129-40d0-964e-f172db1dc77b",
+      "date": "2026-10-01",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 10000,
+      "category": "Food",
+      "method": "Cash",
+      "note": "Loan from rithesh",
+      "inBudget": false
     }
   ],
   "budgets": [],
