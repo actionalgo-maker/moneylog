@@ -3357,6 +3357,17 @@
       "method": "Cash",
       "note": "Loan from rithesh",
       "inBudget": false
+    },
+    {
+      "id": "4d7865ef-da32-4173-8c8a-4e62016ebe53",
+      "date": "2026-10-01",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 20,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
