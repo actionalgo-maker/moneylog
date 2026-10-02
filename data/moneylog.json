@@ -3390,6 +3390,17 @@
       "method": "Cash",
       "note": "Creatine diaper",
       "inBudget": true
+    },
+    {
+      "id": "eb042ce3-0bcb-4405-a4cf-aa6b7d730875",
+      "date": "2026-10-01",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 500,
+      "category": "Transport",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
