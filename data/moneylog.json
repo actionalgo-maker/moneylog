@@ -3412,6 +3412,17 @@
       "method": "Cash",
       "note": "Murti",
       "inBudget": true
+    },
+    {
+      "id": "eb876b5d-160e-4de7-ba4e-9b48be935611",
+      "date": "2026-10-02",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 150,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
