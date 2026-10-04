@@ -3456,6 +3456,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "3c0b6e98-5594-4461-ba3c-1cc5861ad708",
+      "date": "2026-10-03",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 700,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Murthi",
+      "inBudget": true
     }
   ],
   "budgets": [],
