@@ -3467,6 +3467,17 @@
       "method": "Cash",
       "note": "Murthi",
       "inBudget": true
+    },
+    {
+      "id": "37b2bcc3-8da3-4c4c-9632-63f797a75b56",
+      "date": "2026-10-03",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 500,
+      "category": "Food",
+      "method": "Cash",
+      "note": "Temple, farsan, dec, food soap",
+      "inBudget": true
     }
   ],
   "budgets": [],
