@@ -3478,6 +3478,17 @@
       "method": "Cash",
       "note": "Temple, farsan, dec, food soap",
       "inBudget": true
+    },
+    {
+      "id": "721598ba-7a56-49a3-959a-3340fefe0923",
+      "date": "2026-10-05",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 10000,
+      "category": "EMI",
+      "method": "Cash",
+      "note": "gold loan",
+      "inBudget": false
     }
   ],
   "budgets": [],
