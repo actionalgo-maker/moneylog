@@ -3474,7 +3474,7 @@
       "user": "yonko",
       "type": "expense",
       "amount": 500,
-      "category": "Food",
+      "category": "Bills",
       "method": "Cash",
       "note": "Temple, farsan, dec, food soap",
       "inBudget": true
