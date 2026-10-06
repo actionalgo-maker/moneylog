@@ -3510,7 +3510,7 @@
       "category": "EMI",
       "method": "Cash",
       "note": "byke",
-      "inBudget": true
+      "inBudget": false
     }
   ],
   "budgets": [],
