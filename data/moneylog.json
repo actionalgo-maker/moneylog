@@ -3489,6 +3489,17 @@
       "method": "Cash",
       "note": "gold loan",
       "inBudget": false
+    },
+    {
+      "id": "eb73483b-e625-493d-b4fc-fcf41212ea5d",
+      "date": "2026-10-05",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 40,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
