@@ -3353,7 +3353,7 @@
       "user": "yonko",
       "type": "expense",
       "amount": 10000,
-      "category": "Food",
+      "category": "EMI",
       "method": "Cash",
       "note": "Loan from rithesh",
       "inBudget": false
