@@ -3676,6 +3676,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "f0ccd40c-ebb3-4245-add2-13a300bd40c7",
+      "date": "2026-10-15",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 500,
+      "category": "Transport",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
