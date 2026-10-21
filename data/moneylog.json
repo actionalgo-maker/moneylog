@@ -3720,6 +3720,17 @@
       "method": "Cash",
       "note": "Korana",
       "inBudget": true
+    },
+    {
+      "id": "1afcf3c9-fd9e-4b13-83fe-f066e9c9bda0",
+      "date": "2026-10-21",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 850,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
