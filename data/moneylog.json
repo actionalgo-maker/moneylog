@@ -3819,6 +3819,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "703bdf1b-b539-4bcd-8ab5-63d3aca25db9",
+      "date": "2026-10-25",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 360,
+      "category": "Food",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
