@@ -3863,6 +3863,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "9cd43363-3a71-4dda-ad8f-6e52a99876bd",
+      "date": "2026-10-28",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 1300,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Shoes",
+      "inBudget": true
     }
   ],
   "budgets": [],
