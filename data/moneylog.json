@@ -3918,6 +3918,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "65fee37a-d79b-4a0d-a191-d43d0f6fabab",
+      "date": "2026-10-31",
+      "user": "yonko",
+      "type": "income",
+      "amount": 2000,
+      "category": "Freelance",
+      "method": "Cash",
+      "note": "Dr",
+      "inBudget": true
     }
   ],
   "budgets": [],
