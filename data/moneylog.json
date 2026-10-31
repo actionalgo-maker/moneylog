@@ -3929,6 +3929,17 @@
       "method": "Cash",
       "note": "Dr",
       "inBudget": true
+    },
+    {
+      "id": "d29b7ce9-eb85-401d-9002-a24566ce51a9",
+      "date": "2026-10-31",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 320,
+      "category": "Food",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
