@@ -3951,6 +3951,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "64f1e437-1d25-437b-8cbb-0283175c2734",
+      "date": "2026-11-02",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 5200,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "kirana",
+      "inBudget": true
     }
   ],
   "budgets": [],
