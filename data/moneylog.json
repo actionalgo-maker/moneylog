@@ -4039,6 +4039,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": false
+    },
+    {
+      "id": "7876f3ab-45ec-422d-8725-b7325f23f5d9",
+      "date": "2026-11-04",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 600,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "cloths",
+      "inBudget": true
     }
   ],
   "budgets": [],
