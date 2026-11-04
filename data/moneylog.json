@@ -3984,6 +3984,17 @@
       "method": "Cash",
       "note": "Frizy hospital",
       "inBudget": true
+    },
+    {
+      "id": "8edcc80b-0f39-410d-b980-b25bd287e78a",
+      "date": "2026-11-04",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 190,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
