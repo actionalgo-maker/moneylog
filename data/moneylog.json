@@ -3973,6 +3973,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "133dd806-ab2b-47fa-8ebf-fa14fa9710dc",
+      "date": "2026-11-04",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 1000,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Frizy hospital",
+      "inBudget": true
     }
   ],
   "budgets": [],
