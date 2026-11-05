@@ -4083,6 +4083,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "63409f47-9dd7-45aa-8de3-d5ea6e27ddcf",
+      "date": "2026-11-05",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 1200,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "Papa cloths",
+      "inBudget": true
     }
   ],
   "budgets": [],
