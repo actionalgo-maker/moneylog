@@ -4050,6 +4050,17 @@
       "method": "Cash",
       "note": "cloths",
       "inBudget": true
+    },
+    {
+      "id": "2c6bf4f2-3fc5-48b4-9708-dbd52b754626",
+      "date": "2026-11-05",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 3800,
+      "category": "EMI",
+      "method": "Cash",
+      "note": "",
+      "inBudget": false
     }
   ],
   "budgets": [],
