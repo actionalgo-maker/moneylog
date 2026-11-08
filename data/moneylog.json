@@ -4105,6 +4105,17 @@
       "method": "Cash",
       "note": "Decor",
       "inBudget": true
+    },
+    {
+      "id": "e70dc635-f755-44e3-9027-8e65d03787de",
+      "date": "2026-11-08",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 720,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
