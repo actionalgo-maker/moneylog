@@ -4204,6 +4204,17 @@
       "method": "Cash",
       "note": "sakshi",
       "inBudget": true
+    },
+    {
+      "id": "6ab55c92-5289-4959-a298-6a61248ee5e0",
+      "date": "2026-11-13",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 300,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "recharge",
+      "inBudget": true
     }
   ],
   "budgets": [],
