@@ -4171,6 +4171,17 @@
       "method": "Cash",
       "note": "service petrol",
       "inBudget": true
+    },
+    {
+      "id": "d9b6e7a0-56e7-4c70-b87f-47b5ce800cf8",
+      "date": "2026-11-13",
+      "user": "yonko",
+      "type": "income",
+      "amount": 17200,
+      "category": "Freelance",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
