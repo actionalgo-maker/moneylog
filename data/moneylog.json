@@ -4215,6 +4215,17 @@
       "method": "Cash",
       "note": "recharge",
       "inBudget": true
+    },
+    {
+      "id": "8ab7ff17-4bc3-4c39-97c1-88bf092fde01",
+      "date": "2026-11-13",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 150,
+      "category": "Food",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
