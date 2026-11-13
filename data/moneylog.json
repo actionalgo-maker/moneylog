@@ -4127,6 +4127,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "0521621f-b1c7-4024-ad9f-f1967878c8fd",
+      "date": "2026-11-13",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 1600,
+      "category": "Food",
+      "method": "Cash",
+      "note": "diaper jockey facewash",
+      "inBudget": true
     }
   ],
   "budgets": [],
