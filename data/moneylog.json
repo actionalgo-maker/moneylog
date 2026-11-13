@@ -4160,6 +4160,17 @@
       "method": "Cash",
       "note": "",
       "inBudget": true
+    },
+    {
+      "id": "d459f85d-c99e-422e-bf4e-3f86c5973453",
+      "date": "2026-11-13",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 900,
+      "category": "Transport",
+      "method": "Cash",
+      "note": "service petrol",
+      "inBudget": true
     }
   ],
   "budgets": [],
