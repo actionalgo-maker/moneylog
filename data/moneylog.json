@@ -4248,6 +4248,17 @@
       "method": "Cash",
       "note": "nagpur",
       "inBudget": true
+    },
+    {
+      "id": "7aff86fc-64a7-46a7-b944-7a5349ddde44",
+      "date": "2026-11-17",
+      "user": "yonko",
+      "type": "income",
+      "amount": 4000,
+      "category": "Freelance",
+      "method": "Cash",
+      "note": "nrm",
+      "inBudget": true
     }
   ],
   "budgets": [],
