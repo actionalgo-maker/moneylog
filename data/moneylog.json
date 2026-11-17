@@ -4237,6 +4237,17 @@
       "method": "Cash",
       "note": "fataka",
       "inBudget": true
+    },
+    {
+      "id": "3d7e2a03-6d26-490a-a604-32762cb9d450",
+      "date": "2026-11-16",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 7000,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "nagpur",
+      "inBudget": true
     }
   ],
   "budgets": [],
