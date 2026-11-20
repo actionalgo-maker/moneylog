@@ -4336,6 +4336,17 @@
       "method": "Cash",
       "note": "ramesh",
       "inBudget": true
+    },
+    {
+      "id": "161372e5-447b-45d5-9c42-affa506dd367",
+      "date": "2026-11-20",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 2000,
+      "category": "Bills",
+      "method": "Cash",
+      "note": "wife",
+      "inBudget": true
     }
   ],
   "budgets": [],
