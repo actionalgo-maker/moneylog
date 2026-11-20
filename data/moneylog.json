@@ -4302,7 +4302,7 @@
       "category": "EMI",
       "method": "Cash",
       "note": "credit card",
-      "inBudget": true
+      "inBudget": false
     },
     {
       "id": "3a7a5761-2a4b-4381-94fa-e14abab618fd",
