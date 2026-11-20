@@ -4259,6 +4259,17 @@
       "method": "Cash",
       "note": "nrm",
       "inBudget": true
+    },
+    {
+      "id": "f0d4b6ef-d7f2-4220-ad54-c509c6869186",
+      "date": "2026-11-20",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 800,
+      "category": "Fun",
+      "method": "Cash",
+      "note": "",
+      "inBudget": true
     }
   ],
   "budgets": [],
