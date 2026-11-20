@@ -4325,6 +4325,17 @@
       "method": "Cash",
       "note": "interest in loan",
       "inBudget": false
+    },
+    {
+      "id": "2b063e4b-b3e1-4504-950c-6d5557153b62",
+      "date": "2026-11-20",
+      "user": "yonko",
+      "type": "income",
+      "amount": 10000,
+      "category": "Freelance",
+      "method": "Cash",
+      "note": "ramesh",
+      "inBudget": true
     }
   ],
   "budgets": [],
