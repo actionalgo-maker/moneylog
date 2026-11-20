@@ -4314,6 +4314,17 @@
       "method": "Cash",
       "note": "muthut",
       "inBudget": false
+    },
+    {
+      "id": "0ee9c315-efb1-475d-b501-14df6deb32a8",
+      "date": "2026-11-20",
+      "user": "yonko",
+      "type": "expense",
+      "amount": 4000,
+      "category": "EMI",
+      "method": "Cash",
+      "note": "interest in loan",
+      "inBudget": false
     }
   ],
   "budgets": [],
